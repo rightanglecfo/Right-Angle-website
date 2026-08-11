@@ -437,7 +437,7 @@ section[id] { scroll-margin-top: 100px; }
   display: grid;
   grid-template-columns: 0.55fr 1.45fr;
   gap: var(--space-5);
-  align-items: center;
+  align-items: start;
 }
 .about-photo {
   position: relative;
