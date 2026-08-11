@@ -96,7 +96,7 @@
        notifications — swap this <form> for a Squarespace Form Block
        and this script block becomes unnecessary for the contact form.
      ------------------------------------------------------------- */
-  var FORM_ENDPOINT = ''; // e.g. 'https://formspree.io/f/xxxxxxx'
+  var FORM_ENDPOINT = 'https://formspree.io/f/xoeadrbg';
 
   var form = document.getElementById('contactForm');
   var statusEl = document.getElementById('formStatus');
