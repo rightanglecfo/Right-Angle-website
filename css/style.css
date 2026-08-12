@@ -683,7 +683,9 @@ section[id] { scroll-margin-top: 100px; }
 
 @media (max-width: 860px) {
   .nav-links { display: none; }
+  .nav-cta { display: none; }
   .nav-toggle { display: block; }
+  .brand { flex-shrink: 0; }
   .services-grid { grid-template-columns: 1fr; }
   .footer-top { grid-template-columns: 1fr; gap: var(--space-4); }
   .hero-watermark { display: none; }
