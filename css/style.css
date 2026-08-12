@@ -299,7 +299,7 @@ section[id] { scroll-margin-top: 100px; }
 .hero-watermark {
   position: absolute;
   top: 50%;
-  right: -4vw;
+  right: 7vw;
   transform: translateY(-50%);
   display: flex;
   align-items: flex-end;
