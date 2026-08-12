@@ -474,7 +474,15 @@ section[id] { scroll-margin-top: 100px; }
   transform: scale(1.03);
 }
 .about-copy h2 { margin-top: var(--space-1); font-size: clamp(1.5rem, 2.2vw, 1.9rem); }
-.about-copy .lede { margin-top: var(--space-2); max-width: 56ch; font-size: 1rem; }
+.about-copy .credential {
+  display: block;
+  margin-top: 0.35em;
+  font-size: 0.85rem;
+  font-weight: 600;
+  letter-spacing: 0.03em;
+  color: var(--accent);
+}
+.about-copy .lede { margin-top: var(--space-3); max-width: 56ch; font-size: 1rem; }
 .about-linkedin {
   margin-top: var(--space-3);
   display: inline-flex;
