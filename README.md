@@ -22,7 +22,7 @@ design-system/           Reference doc: exact color/type tokens used, for whoeve
 ## Before this goes live
 
 1. **LinkedIn URL** — two placeholder links (`#`) are marked `TODO` in `index.html`: one in the Contact section, one in the footer. Search for `linkedinLink` and swap in your profile URL once it exists.
-2. **Contact form delivery** — the form validates and works in the browser now, but has no backend. It currently falls back to opening a pre-filled `mailto:` to garrett@rightanglecfo.com. To get real form submissions emailed to you without a backend, sign up at a service like Formspree (free tier), and paste the endpoint into `FORM_ENDPOINT` in `js/main.js`. **This step becomes unnecessary once you move to Squarespace** — see below.
+2. **Contact form delivery** — the form validates and works in the browser now, but has no backend. It currently falls back to opening a pre-filled `mailto:` to info@rightanglecfo.com. To get real form submissions emailed to you without a backend, sign up at a service like Formspree (free tier), and paste the endpoint into `FORM_ENDPOINT` in `js/main.js`. **This step becomes unnecessary once you move to Squarespace** — see below.
 3. **Founder headshot (optional)** — the About section currently uses the logo mark on a navy panel rather than a photo, since none was provided. Swap in a professional headshot if you'd like a more personal touch.
 
 ## Porting to Squarespace

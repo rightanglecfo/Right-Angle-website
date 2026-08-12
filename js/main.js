@@ -86,9 +86,9 @@
      a Formspree-style endpoint so the demo is fully functional
      without a backend.
 
-     TO ACTIVATE EMAIL DELIVERY TO garrett@rightanglecfo.com:
+     TO ACTIVATE EMAIL DELIVERY TO info@rightanglecfo.com:
        1. Create a free form at https://formspree.io (or any static
-          form service) pointed at garrett@rightanglecfo.com.
+          form service) pointed at info@rightanglecfo.com.
        2. Replace FORM_ENDPOINT below with the endpoint it gives you.
 
      WHEN PORTING TO SQUARESPACE:
@@ -166,7 +166,7 @@
           'Email: ' + payload.email + '\n\n' +
           payload.message;
         var mailto =
-          'mailto:garrett@rightanglecfo.com?subject=' +
+          'mailto:info@rightanglecfo.com?subject=' +
           encodeURIComponent('New inquiry from rightanglecfo.com') +
           '&body=' + encodeURIComponent(body);
         window.location.href = mailto;
@@ -189,13 +189,13 @@
             statusEl.textContent = 'Thanks — I\'ll be in touch shortly.';
             statusEl.className = 'form-status is-success';
           } else {
-            statusEl.textContent = 'Something went wrong. Please email garrett@rightanglecfo.com directly.';
+            statusEl.textContent = 'Something went wrong. Please email info@rightanglecfo.com directly.';
             statusEl.className = 'form-status is-error';
           }
         })
         .catch(function () {
           submitBtn.disabled = false;
-          statusEl.textContent = 'Something went wrong. Please email garrett@rightanglecfo.com directly.';
+          statusEl.textContent = 'Something went wrong. Please email info@rightanglecfo.com directly.';
           statusEl.className = 'form-status is-error';
         });
     });
