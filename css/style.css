@@ -733,3 +733,31 @@ section[id] { scroll-margin-top: 100px; }
   .form-row { grid-template-columns: 1fr; }
   .hero-actions { flex-direction: column; align-items: flex-start; }
 }
+
+/* ---------- Case study teaser ---------- */
+.cs-stats {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--space-4);
+  border-top: 1px solid var(--line);
+  padding-top: var(--space-4);
+}
+.cs-stat { display: grid; gap: 0.4em; }
+.cs-num {
+  font-family: var(--font-display);
+  font-size: clamp(1.6rem, 2.6vw, 2.1rem);
+  line-height: 1.1;
+  letter-spacing: -0.02em;
+  color: var(--accent);
+}
+.cs-lab { font-size: 0.92rem; color: var(--text-secondary); }
+.cs-actions {
+  margin-top: var(--space-5);
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: var(--space-2);
+}
+@media (max-width: 720px) {
+  .cs-stats { grid-template-columns: 1fr; gap: var(--space-3); }
+}

@@ -1,0 +1,1353 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Case Study: Reporting for a $20M Manufacturer | Right Angle</title>
+<meta name="description" content="An illustrative fractional CFO engagement: an executive reporting dashboard, an assessment of the accounting function and close, and investor and lender reporting for a $20M metal fabricator preparing for a sale.">
+<link rel="canonical" href="https://rightanglecfo.com/case-study">
+
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Right Angle Finance &amp; Accounting">
+<meta property="og:title" content="Case Study: Reporting for a $20M Manufacturer | Right Angle">
+<meta property="og:description" content="An illustrative fractional CFO engagement: an executive reporting dashboard, an assessment of the accounting function and close, and investor and lender reporting for a $20M metal fabricator preparing for a sale.">
+<meta property="og:url" content="https://rightanglecfo.com/case-study">
+<meta property="og:image" content="https://rightanglecfo.com/images/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Case Study: Reporting for a $20M Manufacturer | Right Angle">
+<meta name="twitter:description" content="An illustrative fractional CFO engagement: an executive reporting dashboard, an assessment of the accounting function and close, and investor and lender reporting for a $20M metal fabricator preparing for a sale.">
+<meta name="twitter:image" content="https://rightanglecfo.com/images/og-image.png">
+
+<link rel="icon" type="image/x-icon" href="/favicon.ico">
+<link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+<link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<style>
+.cs-scope{
+  --accent:#2D5BA8;
+  --accent-2:#C9761A;
+  --surface:#FAFAFB;
+  --panel:#FFFFFF;
+  --ink:#121826;
+  --ink-2:#4A5468;
+  --ink-3:#7C869B;
+  --hair:#E2E5EC;
+  --grid:#EDEFF4;
+  --warn-bg:#FBF3E8;
+  --warn-ink:#8A5312;
+  --good:#2F7A52;
+  --good-bg:#EDF6F0;
+  --s1:#1F4E9C; --s2:#2F8D6A; --s3:#C9761A; --s4:#9C3F74;
+  --navyband:#1F3251;
+  --font-display:'Space Grotesk',system-ui,-apple-system,'Segoe UI',sans-serif;
+  --font-body:'Inter',system-ui,-apple-system,'Segoe UI',sans-serif;
+  --font-mono:'IBM Plex Mono',ui-monospace,'SF Mono',Menlo,monospace;
+}
+.cs-scope, .cs-scope *{box-sizing:border-box}
+.cs-scope{background:var(--surface);color:var(--ink);font-family:var(--font-body);margin:0;
+  padding-block:0 52px;padding-left:20px;padding-right:20px;-webkit-font-smoothing:antialiased}
+.cs-scope .wrap{max-width:1180px;margin:0 auto}
+.cs-scope .mast{display:flex;flex-wrap:wrap;gap:16px;align-items:flex-end;justify-content:space-between;
+  padding-block:30px 20px;border-bottom:2px solid var(--ink)}
+.cs-scope .mast .eyebrow{font-family:var(--font-mono);font-size:10.5px;letter-spacing:.14em;
+  text-transform:uppercase;color:var(--ink-3);margin-bottom:8px}
+.cs-scope .mast h1{font-family:var(--font-display);font-weight:700;font-size:clamp(24px,3.6vw,33px);
+  letter-spacing:-.022em;margin:0;line-height:1.1}
+.cs-scope .mast .sub{font-size:13px;color:var(--ink-2);margin-top:6px}
+.cs-scope .badge{font-family:var(--font-mono);font-size:10.5px;letter-spacing:.08em;text-transform:uppercase;
+  color:var(--warn-ink);background:var(--warn-bg);
+  border:1px solid color-mix(in srgb,var(--warn-ink) 25%,transparent);
+  padding:5px 9px;border-radius:3px;white-space:nowrap}
+.cs-scope .brief{margin-top:26px;display:grid;grid-template-columns:1.55fr 1fr;gap:18px}
+.cs-scope .brief .body{background:var(--panel);border:1px solid var(--hair);border-radius:4px;padding:24px 26px}
+.cs-scope .brief h2{font-family:var(--font-display);font-weight:600;font-size:17px;margin:0 0 12px;letter-spacing:-.01em}
+.cs-scope .brief p{margin:0 0 11px;font-size:14px;line-height:1.65;color:var(--ink-2);max-width:66ch}
+.cs-scope .brief p:last-child{margin-bottom:0}
+.cs-scope .brief p.disc{font-style:italic;font-size:13px;color:var(--ink-3);
+  border-left:2px solid var(--hair);padding-left:12px;margin-bottom:14px}
+.cs-scope .brief b{color:var(--ink);font-weight:600}
+.cs-scope .jump{color:var(--ink);font-weight:600;text-decoration:none;
+  box-shadow:inset 0 -2px 0 color-mix(in srgb,var(--accent) 45%,transparent);
+  transition:box-shadow .12s}
+.cs-scope .jump:hover{box-shadow:inset 0 -2px 0 var(--accent)}
+.cs-scope .jump:focus-visible{outline:2px solid var(--accent);outline-offset:2px;border-radius:2px}
+.cs-scope .facts{background:var(--panel);border:1px solid var(--hair);border-radius:4px;padding:18px 20px;
+  align-self:start}
+.cs-scope .facts h3{font-family:var(--font-display);font-size:11px;letter-spacing:.11em;text-transform:uppercase;
+  color:var(--ink-3);margin:0 0 12px;font-weight:600}
+.cs-scope .facts dl{margin:0;display:grid;grid-template-columns:auto 1fr;gap:9px 14px;font-size:12.5px}
+.cs-scope .facts dt{color:var(--ink-3)}
+.cs-scope .facts dd{margin:0;text-align:right;font-family:var(--font-mono);color:var(--ink);
+  font-variant-numeric:tabular-nums;font-weight:500}
+.cs-scope details.stage{margin-top:22px;background:var(--panel);border:1px solid var(--hair);border-radius:4px;
+  overflow:hidden}
+.cs-scope details.stage > summary{list-style:none;cursor:pointer;padding:20px 24px;display:flex;gap:16px;
+  align-items:baseline;flex-wrap:wrap;border-left:4px solid var(--accent)}
+.cs-scope details.stage > summary::-webkit-details-marker{display:none}
+.cs-scope details.stage > summary:hover{background:var(--grid)}
+.cs-scope details.stage > summary:focus-visible{outline:2px solid var(--accent);outline-offset:-2px}
+.cs-scope .stage .num{font-family:var(--font-mono);font-size:11px;font-weight:600;color:var(--accent);
+  letter-spacing:.1em}
+.cs-scope .stage .ttl{font-family:var(--font-display);font-weight:600;font-size:18px;letter-spacing:-.015em;
+  margin:0;flex:1;min-width:200px}
+.cs-scope .stage .teaser{font-size:12.5px;color:var(--ink-2);flex-basis:100%;margin-top:2px;line-height:1.5}
+.cs-scope .stage .kpi{font-family:var(--font-mono);font-size:11.5px;color:var(--ink);font-weight:600;
+  font-variant-numeric:tabular-nums;background:var(--surface);border:1px solid var(--hair);
+  padding:4px 10px;border-radius:3px;white-space:nowrap;min-width:0}
+@media (max-width:620px){.cs-scope .stage .kpi{white-space:normal;line-height:1.5}}
+.cs-scope .stage .chev{font-family:var(--font-mono);font-size:11px;color:var(--ink-3)}
+.cs-scope details.stage[open] > summary .chev::after{content:"collapse −"}
+.cs-scope details.stage:not([open]) > summary .chev::after{content:"expand +"}
+.cs-scope .stage .inner{padding:0 24px 24px;border-top:1px solid var(--hair)}
+.cs-scope .stage .inner > .sect:first-child{margin-top:20px}
+.cs-scope .sect{display:flex;align-items:center;gap:12px;margin:26px 0 14px}
+.cs-scope .sect h3{font-family:var(--font-display);font-weight:600;font-size:12.5px;letter-spacing:.1em;
+  text-transform:uppercase;color:var(--ink-2);margin:0;white-space:nowrap}
+.cs-scope .sect::after{content:"";flex:1;height:1px;background:var(--hair)}
+.cs-scope .thesis{margin-top:20px;padding:18px 22px;background:var(--surface);
+  border:1px solid var(--hair);border-left:4px solid var(--accent-2);border-radius:4px}
+.cs-scope .thesis h4{font-family:var(--font-display);font-weight:600;font-size:clamp(15px,1.9vw,18px);
+  margin:0;line-height:1.45;letter-spacing:-.01em;text-wrap:balance}
+.cs-scope .tiles{display:grid;grid-template-columns:repeat(6,1fr);gap:1px;background:var(--hair);
+  border:1px solid var(--hair);border-radius:4px;overflow:hidden;margin-top:16px}
+.cs-scope .tile{background:var(--panel);padding:15px 16px 16px;min-width:0}
+.cs-scope .tile .k{font-size:10px;letter-spacing:.08em;text-transform:uppercase;color:var(--ink-3);font-weight:600}
+.cs-scope .tile .v{font-family:var(--font-mono);font-weight:600;font-size:clamp(17px,2vw,22px);
+  margin-top:7px;letter-spacing:-.025em;font-variant-numeric:tabular-nums}
+.cs-scope .tile .d{font-size:11px;color:var(--accent-2);font-weight:500;margin-top:4px;line-height:1.4}
+.cs-scope .grid{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.cs-scope .grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.cs-scope .card{background:var(--panel);border:1px solid var(--hair);border-radius:4px;
+  padding:18px 18px 14px;min-width:0}
+.cs-scope .card.wide{grid-column:1 / -1}
+.cs-scope .card .hd{display:flex;gap:12px;align-items:flex-start;justify-content:space-between;flex-wrap:wrap}
+.cs-scope .card h4{font-family:var(--font-display);font-weight:600;font-size:15px;margin:0;
+  letter-spacing:-.01em;line-height:1.35;text-wrap:balance}
+.cs-scope .card .note{font-size:12px;color:var(--ink-2);margin:5px 0 12px;line-height:1.5;
+  font-variant-numeric:tabular-nums}
+.cs-scope .legend{display:flex;gap:14px;margin:0 0 10px;font-size:11.5px;color:var(--ink-2);flex-wrap:wrap}
+.cs-scope .legend span{display:flex;align-items:center;gap:6px;white-space:nowrap}
+.cs-scope .swatch{width:10px;height:10px;border-radius:2px;display:inline-block}
+.cs-scope .seg{display:flex;border:1px solid var(--hair);border-radius:3px;overflow:hidden;flex:none}
+.cs-scope .seg button{font-family:var(--font-mono);font-size:10.5px;letter-spacing:.04em;
+  border:0;background:var(--panel);color:var(--ink-3);padding:5px 9px;cursor:pointer;
+  border-left:1px solid var(--hair)}
+.cs-scope .seg button:first-child{border-left:0}
+.cs-scope .seg button[aria-pressed="true"]{background:var(--accent);color:#fff}
+.cs-scope .seg button:focus-visible{outline:2px solid var(--accent);outline-offset:-2px}
+.cs-scope svg{display:block;width:100%;height:auto;overflow:visible}
+.cs-scope .ax{font-family:var(--font-body);font-size:10.5px;fill:var(--ink-3)}
+.cs-scope .vl{font-family:var(--font-mono);font-size:10.5px;fill:var(--ink-2);font-variant-numeric:tabular-nums}
+.cs-scope .vl.em{fill:var(--ink);font-weight:600}
+.cs-scope .gl{stroke:var(--grid);stroke-width:1}
+.cs-scope .mark{transition:opacity .12s}
+.cs-scope .chart:hover .mark{opacity:.45}
+.cs-scope .chart .mark:hover{opacity:1}
+.cs-scope .swot{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.cs-scope .q{border:1px solid var(--hair);border-radius:4px;padding:16px 18px;background:var(--surface)}
+.cs-scope .q h5{font-family:var(--font-display);font-size:12px;letter-spacing:.1em;text-transform:uppercase;
+  margin:0 0 10px;font-weight:600;display:flex;align-items:center;gap:8px}
+.cs-scope .q h5::before{content:"";width:9px;height:9px;border-radius:2px;background:currentColor;flex:none}
+.cs-scope .q.s h5{color:var(--s2)}
+.cs-scope .q.w h5{color:var(--accent-2)}
+.cs-scope .q.o h5{color:var(--s1)}
+.cs-scope .q.t h5{color:var(--s4)}
+.cs-scope .q ul{margin:0;padding-left:16px}
+.cs-scope .q li{font-size:12.5px;line-height:1.55;color:var(--ink-2);margin-bottom:7px}
+.cs-scope .q li:last-child{margin-bottom:0}
+.cs-scope .q b{color:var(--ink);font-weight:600}
+.cs-scope .cap{font-weight:700;font-size:12.5px;padding-bottom:6px}
+.cs-scope .model{display:grid;width:max-content;
+  grid-template-columns:auto repeat(3,minmax(74px,max-content)) 22px repeat(2,minmax(74px,max-content));
+  font-size:12.5px;color:var(--ink);align-items:baseline}
+.cs-scope .model > div{padding:3px 0}
+.cs-scope .model .lb{text-align:left;padding-right:34px}
+.cs-scope .model .c{text-align:right;padding-left:24px;font-variant-numeric:tabular-nums}
+.cs-scope .model .gap{padding:0}
+.cs-scope .model i{font-style:normal;float:left;color:var(--ink-2)}
+.cs-scope .model .hd{background:var(--navyband);color:#fff;font-weight:700;padding-top:5px;padding-bottom:5px}
+.cs-scope .model .lb.hd{padding-right:34px;background:none}
+.cs-scope .model .sub{font-weight:700;border-top:1px solid var(--ink);padding-top:4px}
+.cs-scope .model .lb.sub,.cs-scope .model .gap.sub{border-top:0}
+.cs-scope .model .pc{font-style:italic;color:var(--ink-2);font-size:11.5px;padding-top:1px;padding-bottom:3px}
+.cs-scope .model .sp{height:11px;padding:0}
+.cs-scope table{width:100%;border-collapse:collapse;font-size:12.5px}
+.cs-scope .tw{overflow-x:auto}
+.cs-scope th{font-family:var(--font-body);font-size:10px;letter-spacing:.08em;text-transform:uppercase;
+  color:var(--ink-3);font-weight:600;text-align:left;padding:0 12px 9px 0;border-bottom:1px solid var(--hair);
+  white-space:nowrap}
+.cs-scope th.n,.cs-scope td.n{text-align:right;font-family:var(--font-mono);font-variant-numeric:tabular-nums}
+.cs-scope td{padding:10px 12px 10px 0;border-bottom:1px solid var(--grid);color:var(--ink-2);vertical-align:top}
+.cs-scope td b{color:var(--ink);font-weight:600}
+.cs-scope tr:last-child td{border-bottom:0}
+.cs-scope .pill{font-family:var(--font-mono);font-size:10px;letter-spacing:.06em;text-transform:uppercase;
+  padding:3px 7px;border-radius:3px;white-space:nowrap;font-weight:600}
+.cs-scope .pill.pass{background:var(--good-bg);color:var(--good)}
+.cs-scope .pill.watch{background:var(--warn-bg);color:var(--warn-ink)}
+.cs-scope .days{font-family:var(--font-mono);color:var(--s2);font-weight:600}
+.cs-scope .days.dn{color:var(--accent-2)}
+.cs-scope .mono2{font-family:var(--font-mono);font-size:11.5px;color:var(--ink-2);white-space:nowrap}
+.cs-scope .muted{color:var(--ink-3)}
+.cs-scope .cols{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.cs-scope .block{border:1px solid var(--hair);border-radius:4px;padding:18px 20px;background:var(--surface)}
+.cs-scope .block h4{font-family:var(--font-display);font-weight:600;font-size:14px;margin:0 0 4px;letter-spacing:-.01em}
+.cs-scope .block .note{font-size:12px;color:var(--ink-2);margin:0 0 13px;line-height:1.5}
+.cs-scope .block ul{margin:0;padding-left:16px}
+.cs-scope .block li{font-size:12.5px;line-height:1.6;color:var(--ink-2);margin-bottom:6px}
+.cs-scope .snip{font-family:var(--font-mono);font-size:11.5px;line-height:1.65;color:var(--ink-2);
+  background:var(--panel);border:1px solid var(--hair);border-left:3px solid var(--accent);
+  border-radius:3px;padding:13px 15px;margin-top:12px;white-space:pre-wrap}
+.cs-scope .snip b{color:var(--ink);font-weight:600}
+.cs-scope .find{margin-top:16px;background:var(--surface);border:1px solid var(--hair);border-radius:4px;padding:20px 22px}
+.cs-scope .find h4{font-family:var(--font-display);font-weight:600;font-size:15px;margin:0 0 12px}
+.cs-scope .find ol{margin:0;padding-left:0;list-style:none;counter-reset:f}
+.cs-scope .find li{counter-increment:f;position:relative;padding-left:30px;margin-bottom:11px;
+  font-size:13.5px;line-height:1.6;color:var(--ink-2)}
+.cs-scope .find li::before{content:counter(f);position:absolute;left:0;top:1px;
+  font-family:var(--font-mono);font-size:10.5px;font-weight:600;color:var(--accent);
+  border:1px solid var(--accent);border-radius:50%;width:19px;height:19px;
+  display:flex;align-items:center;justify-content:center}
+.cs-scope .find b{color:var(--ink);font-weight:600}
+.cs-scope .mono{font-family:var(--font-mono);font-variant-numeric:tabular-nums;color:var(--ink);font-weight:500}
+.cs-scope footer{margin-top:26px;padding-top:14px;border-top:1px solid var(--hair);
+  font-size:11.5px;color:var(--ink-3);display:flex;justify-content:space-between;gap:14px;flex-wrap:wrap}
+.cs-scope #tip{position:fixed;pointer-events:none;opacity:0;transition:opacity .1s;z-index:10;
+  background:var(--ink);color:var(--surface);font-family:var(--font-mono);font-size:11px;
+  padding:7px 9px;border-radius:3px;white-space:pre;line-height:1.5}
+@media (max-width:1040px){.cs-scope .tiles{grid-template-columns:repeat(3,1fr)}}
+@media (max-width:900px){.cs-scope .brief{grid-template-columns:1fr}}
+@media (max-width:1000px){.cs-scope .grid3{grid-template-columns:1fr 1fr}}
+@media (max-width:860px){.cs-scope .grid,.cs-scope .grid3,.cs-scope .swot,.cs-scope .cols{grid-template-columns:1fr}
+.cs-scope .card.wide{grid-column:auto}}
+@media (max-width:520px){.cs-scope .tiles{grid-template-columns:repeat(2,1fr)}
+.cs-scope .stage > summary{padding:16px 18px}
+.cs-scope .stage .inner{padding:0 18px 20px}}
+@media (prefers-reduced-motion:reduce){.cs-scope, .cs-scope *{transition:none!important}}
+.cs-scope h1,.cs-scope h2,.cs-scope h3,.cs-scope h4,.cs-scope h5,.cs-scope h6{color:var(--ink)}
+.cs-scope ul{list-style:disc}
+.cs-scope .find ol{list-style:none}
+.cs-scope details.stage > summary{list-style:none}
+.cs-scope .eyebrow::before{display:none}
+.cs-scope a{color:inherit}
+
+.cs-scope{display:block;border-radius:6px;margin:0 auto;max-width:1240px;
+  padding-left:clamp(16px,3vw,34px);padding-right:clamp(16px,3vw,34px);padding-bottom:48px}
+/* the site header is position:fixed, so the page has to start below it */
+.cs-page{background:var(--bg);
+  padding:calc(var(--space-6) + 46px) clamp(12px,3vw,32px) clamp(40px,6vw,80px)}
+.cs-backwrap{max-width:1240px;margin:0 auto clamp(12px,1.6vw,18px);
+  padding-left:clamp(16px,3vw,34px)}
+.cs-back{display:inline-flex;align-items:center;gap:8px;font-family:'Inter',sans-serif;
+  font-size:.88rem;color:var(--text-secondary);text-decoration:none;
+  transition:color var(--dur-fast) var(--ease)}
+.cs-back:hover{color:var(--accent)}
+.cs-back svg{width:15px;height:15px;flex:none}
+
+</style>
+</head>
+<body>
+
+<header class="site-header" id="siteHeader">
+  <div class="container">
+    <a href="/" class="brand" aria-label="Right Angle Finance &amp; Accounting — home">
+      <img src="images/logo-horizontal-transparent.png" alt="Right Angle Finance &amp; Accounting">
+    </a>
+    <nav class="nav-links" aria-label="Primary">
+      <a href="/#services">Services</a>
+      <a href="/#about">About</a>
+      <a href="/#process">Approach</a>
+      <a href="/case-study" aria-current="page">Case Study</a>
+      <a href="/#contact">Contact</a>
+    </nav>
+    <div class="nav-cta">
+      <a href="/#contact" class="btn btn-primary">
+        Book a Call
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+      </a>
+    </div>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<div class="mobile-menu" id="mobileMenu">
+  <a href="/#services">Services</a>
+  <a href="/#about">About</a>
+  <a href="/#process">Approach</a>
+  <a href="/case-study">Case Study</a>
+  <a href="/#contact">Contact</a>
+  <a href="/#contact" class="btn btn-primary">Book a Call</a>
+</div>
+
+<main class="cs-page">
+  <div class="cs-backwrap">
+    <a href="/" class="cs-back">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M19 12H5M11 18l-6-6 6-6"/></svg>
+      Back to rightanglecfo.com
+    </a>
+  </div>
+  <div class="cs-scope">
+<div class="wrap">
+
+  <div class="mast">
+    <div>
+      <div class="eyebrow cs-eyebrow">Illustrative case study</div>
+      <h1>A $20M metal fabricator</h1>
+      <div class="sub">Getting the numbers transaction-ready &middot; Right Angle Finance &amp; Accounting</div>
+    </div>
+    <div class="badge">Not a real company</div>
+  </div>
+
+  <div class="brief">
+    <div class="body">
+      <h2>The scenario</h2>
+      <p class="disc">The example below is a composite built on generated data to highlight what an
+         engagement with Right Angle produces; no numbers on this page come from a real client.</p>
+      <p>A second-generation metal fabricator in Colorado doing $20.8M in revenue has engaged
+         Right Angle with the goal of optimizing their finances and operations ahead of a sale
+         process within 2-3 years.</p>
+      <p>They asked for three things: a <a class="jump" href="#stage-dashboard">reporting dashboard</a> the exec team
+         could run the business on, an <a class="jump" href="#stage-assessment">assessment of the accounting function</a> including the
+         close timeline, and <a class="jump" href="#stage-strategic">strategic finance support</a> that includes a long range plan and
+         investor and lender relations.</p>
+    </div>
+    <div class="facts">
+      <h3>At a glance</h3>
+      <dl>
+        <dt>Industry</dt><dd>Metal fabrication</dd>
+        <dt>Location</dt><dd>Colorado</dd>
+        <dt>Revenue FY26</dt><dd>$20.8M</dd>
+        <dt>EBITDA FY26</dt><dd>$1.99M</dd>
+        <dt>Headcount</dt><dd>61</dd>
+        <dt>Accounting team</dt><dd>2.5 FTE</dd>
+        <dt>Close timeline</dt><dd>22 days</dd>
+        <dt>Ownership</dt><dd>Family, 2nd gen</dd>
+        <dt>Horizon</dt><dd>Sale in 2-3 years</dd>
+        <dt>Engagement</dt><dd>9 months</dd>
+      </dl>
+    </div>
+  </div>
+
+  <!-- ============ 1 ============ -->
+  <details class="stage" id="stage-dashboard">
+    <summary>
+      <span class="num">01</span>
+      <h2 class="ttl">Executive dashboard</h2>
+      <span class="kpi">Revenue +3.2% &nbsp;&middot;&nbsp; gross margin (230) bps &nbsp;&middot;&nbsp;
+        EBITDA (17.9%) vs plan</span>
+      <span class="chev"></span>
+      <span class="teaser">Revenue +3.2% favorable to plan, gross margin (230) bps unfavorable to
+        plan, and days inventory outstanding running 16 days over plan.</span>
+    </summary>
+    <div class="inner">
+
+      <div class="thesis">
+        <h4>FY26 revenue finished <b>+$0.7M / +3.2% favorable to plan</b> on a 19.8% CAGR. Gross
+            margin came in <b>(230) bps unfavorable to plan</b>, primarily driven by higher raw
+            materials costs.</h4>
+      </div>
+
+      <div class="tiles" id="tiles"></div>
+
+      <div class="sect"><h3>Profit and loss</h3></div>
+      <div class="grid">
+        <div class="card chart wide">
+          <h4>FY26 summary, revenue through net income</h4>
+          <p class="note">Margins shown beneath each subtotal, with variances in percentage points.</p>
+          <div id="cPNL"></div>
+        </div>
+      </div>
+
+      <div class="sect"><h3>Margin</h3></div>
+      <div class="grid">
+        <div class="card chart">
+          <div class="hd">
+            <h4>Revenue and gross margin against plan</h4>
+            <div class="seg" id="seg1" role="group" aria-label="Period"></div>
+          </div>
+          <p class="note" id="n1"></p>
+          <div class="legend">
+            <span><i class="swatch" style="background:var(--accent)"></i>Actual</span>
+            <span><i class="swatch" style="background:var(--ink);height:3px;border-radius:0"></i>Plan</span>
+          </div>
+          <div id="c1"></div>
+        </div>
+        <div class="card chart">
+          <h4>Gross profit bridge, FY25 to FY26</h4>
+          <div id="c2"></div>
+        </div>
+        <div class="card chart">
+          <h4>Gross margin bridge, FY25 to FY26</h4>
+          <div id="c9"></div>
+        </div>
+        <div class="card chart">
+          <h4>Gross margin by product line</h4>
+          <p class="note">FY25 versus FY26. Precision Components down 430 bps, the largest decline.</p>
+          <div class="legend">
+            <span><i class="swatch" style="background:var(--accent)"></i>FY25</span>
+            <span><i class="swatch" style="background:var(--accent-2)"></i>FY26</span>
+          </div>
+          <div id="c4"></div>
+        </div>
+        <div class="card chart">
+          <h4>Revenue concentration</h4>
+          <p class="note">Top 10 accounts against the remaining 31.</p>
+          <div class="legend">
+            <span><i class="swatch" style="background:var(--accent)"></i>Top 10 accounts</span>
+            <span><i class="swatch" style="background:var(--accent-2)"></i>All others</span>
+          </div>
+          <div id="c3"></div>
+        </div>
+        <div class="card chart">
+          <h4>Revenue by region</h4>
+          <div class="legend">
+            <span><i class="swatch" style="background:var(--accent)"></i>FY26 revenue</span>
+            <span><i class="swatch" style="background:var(--ink);height:3px;border-radius:0"></i>FY25</span>
+          </div>
+          <div id="c10"></div>
+        </div>
+      </div>
+
+      <div class="sect"><h3>Working capital</h3></div>
+      <div class="grid3">
+        <div class="card chart">
+          <h4>Days inventory outstanding</h4>
+          <p class="note">48 to 64 days against a plan of 48. Stock built against the backlog.</p>
+          <div id="cDIO"></div>
+        </div>
+        <div class="card chart">
+          <h4>Days sales outstanding</h4>
+          <p class="note">44 to 51 days against a plan of 45. Slow drift, not a collections problem.</p>
+          <div id="cDSO"></div>
+        </div>
+        <div class="card chart">
+          <h4>Days payable outstanding</h4>
+          <p class="note">33 to 42 days against a plan of 35. Payables stretched to fund the build.</p>
+          <div id="cDPO"></div>
+        </div>
+      </div>
+
+      <div class="sect"><h3>Labor and demand</h3></div>
+      <div class="grid">
+        <div class="card chart">
+          <div class="hd">
+            <h4>Overtime as a share of direct hours</h4>
+            <div class="seg" id="seg2" role="group" aria-label="Period"></div>
+          </div>
+          <p class="note" id="n2"></p>
+          <div class="legend" id="lg6"></div>
+          <div id="c6"></div>
+        </div>
+        <div class="card chart">
+          <h4>Overtime expense by department</h4>
+          <div id="c7"></div>
+        </div>
+        <div class="card chart wide">
+          <h4>Backlog by product line</h4>
+          <p class="note">Open order value at month end. Custom Fabrication is taking an increasing
+             share as the book grows.</p>
+          <div class="legend" id="lg8"></div>
+          <div id="c8"></div>
+        </div>
+      </div>
+
+      <div class="find">
+        <h4>Key insights</h4>
+        <ol>
+          <li><b>Revenue beat plan by <span class="mono">3.2%</span> while gross margin missed it by <span class="mono">230 bps</span>, costing <span class="mono">$434K</span> of budgeted EBITDA.</b> The plan assumed the January price increase would hold margin at <span class="mono">26.8%</span>. It did not, and the gap widened through the year to <span class="mono">270 bps</span> behind in Q4.</li>
+          <li><b>Raw material inflation is three quarters of the margin decline on its own.</b> Price realization of <span class="mono">$987K</span> all but offset <span class="mono">$973K</span> of material cost in dollars, but it does not offset it in rate: price adds to the revenue denominator as well as to gross profit, so it recovered <span class="mono">347 bps</span> against <span class="mono">468 bps</span> taken by materials. Direct labor cost another <span class="mono">77 bps</span> and scrap <span class="mono">31 bps</span>, which is the <span class="mono">216 bps</span> decline from FY25.</li>
+          <li><b>Product mix is not the problem.</b> On constant-price revenue, mix is <span class="mono">+15 bps</span>. Unit volume grew <span class="mono">24.8%</span> against revenue growth of <span class="mono">19.8%</span>, so any bridge built on average gross profit per unit charges the difference to mix and lets material cost off the hook.</li>
+          <li><b>Revenue grew <span class="mono">$3.4M</span> and only <span class="mono">$128K</span> of it reached EBITDA.</b> Net income finished flat at <span class="mono">$569K</span> against <span class="mono">$571K</span>. Every line below gross profit improved as a share of revenue: SG&amp;A by <span class="mono">81 bps</span>, depreciation <span class="mono">33 bps</span>, R&amp;D <span class="mono">19 bps</span>. Cost of sales gave back <span class="mono">216 bps</span> and took the year with it.</li>
+          <li><b>Standard costs carry a <span class="mono">12/31/2024</span> effective date.</b> Actual cost of sales of <span class="mono">$15.70M</span> ran <span class="mono">$2.13M</span>, or <span class="mono">15.7%</span>, over the <span class="mono">$13.58M</span> those units carry at standard, against <span class="mono">6.8%</span> in FY25.</li>
+          <li><b>Inventory days ran <span class="mono">16 days</span> over plan and payables <span class="mono">7 days</span> beyond it.</b> Stock built from <span class="mono">48</span> to <span class="mono">64</span> days against the backlog while the plan held <span class="mono">48</span>. Payables were stretched from <span class="mono">33</span> to <span class="mono">42</span> against a plan of <span class="mono">35</span> to help fund it. Receivables drifted <span class="mono">44</span> to <span class="mono">51</span> days.</li>
+          <li><b>The West is <span class="mono">46%</span> of revenue at <span class="mono">22.5%</span> gross margin, <span class="mono">198 bps</span> below the portfolio.</b> All five regions lost margin against FY25, between <span class="mono">170</span> and <span class="mono">350 bps</span>, so this is an input cost problem rather than a geography problem. Outside the US is the smallest region at <span class="mono">4.9%</span> and the fastest growing at <span class="mono">+33.4%</span>, at the best margin in the book.</li>
+          <li><b>The largest account is <span class="mono">15.2%</span> of FY26 revenue at <span class="mono">19.8%</span> gross margin, <span class="mono">555 bps</span> below the rest of the book.</b> No FY26 price action was taken on it. The <span class="mono">31</span>-account tail holds <span class="mono">34.8%</span> of revenue at <span class="mono">27.8%</span> margin against <span class="mono">22.7%</span> for the top 10, so the smallest accounts are the most profitable ones.</li>
+          <li><b>Overtime at <span class="mono">12.6%</span> of direct hours against <span class="mono">7.0%</span> prior year, <span class="mono">18.0%</span> of payroll against <span class="mono">10.2%</span> in FY25.</b> That is <span class="mono">$710K</span> of overtime expense in FY26 and <span class="mono">$1.06M</span> across both years, with machining and welding running <span class="mono">15.8%</span> of hours each.</li>
+          <li><b>Backlog up <span class="mono">48%</span> to <span class="mono">$4.7M</span>, with average order age from <span class="mono">26</span> to <span class="mono">42</span> days.</b> Custom Fabrication carries most of the growth. Demand is being absorbed through overtime and inventory rather than capacity.</li>
+        </ol>
+      </div>
+    </div>
+  </details>
+
+  <!-- ============ 2 ============ -->
+  <details class="stage" id="stage-assessment">
+    <summary>
+      <span class="num">02</span>
+      <h2 class="ttl">Accounting assessment</h2>
+      <span class="kpi">22-day close &nbsp;&rarr;&nbsp; 10 days</span>
+      <span class="chev"></span>
+      <span class="teaser">A 2.5 FTE function closing in 22 business days against a diligence
+        expectation of 10. Where it is strong, where it breaks, and what it takes to get there.</span>
+    </summary>
+    <div class="inner">
+
+      <div class="sect"><h3>The function today</h3></div>
+      <div class="cols">
+        <div class="block">
+          <h4>Team</h4>
+          <p class="note">2.5 FTE in-house, plus an outside CPA firm for tax and an annual review.</p>
+          <ul>
+            <li><b>Controller</b>, 14 years in seat. Owns close, reporting, banking and the ERP. Deep
+                process knowledge, but most processes have incomplete documentation.</li>
+            <li><b>AP/AR clerk</b>, full time. Cash application is disciplined and current.</li>
+            <li><b>Bookkeeper</b>, 20 hrs/week. Payroll entry, bank reconciliation, filing.</li>
+            <li><b>Outside CPA</b>. Tax provision, annual review, no involvement in monthly close.</li>
+          </ul>
+        </div>
+        <div class="block">
+          <h4>Close</h4>
+          <p class="note">22 business days from period end to issued financials. The owner typically
+             sees October results in the last week of November.</p>
+          <ul>
+            <li><b>30+ manual journal entries</b> each month, none standardized or pre-booked.</li>
+            <li><b>Inventory counted quarterly</b>, estimated in the two intervening months.</li>
+            <li><b>Shop floor job tracker does not post to the GL.</b> Actual job cost is keyed in
+                from a report, by hand, after the fact.</li>
+            <li><b>No close calendar.</b> No owners, no cutoffs, no dependency order.</li>
+            <li><b>No account reconciliation schedule.</b> Balance sheet accounts are reviewed when
+                something looks wrong.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="sect"><h3>SWOT</h3></div>
+      <div class="swot">
+        <div class="q s">
+          <h5>Strengths</h5>
+          <ul>
+            <li><b>Source data is good.</b> The ERP already captures job, part, product line and
+                labor hours at the transaction level. The inputs for real costing exist.</li>
+            <li><b>Cash discipline.</b> DSO of 51 days against a blended 45-day term is reasonable,
+                and cash application is current with no unapplied backlog.</li>
+            <li><b>Controller depth.</b> Fourteen years of context on customers, jobs and quirks that
+                no system holds.</li>
+            <li><b>Clean AR aging.</b> Nothing material past 90 days, no disputed balances.</li>
+          </ul>
+        </div>
+        <div class="q w">
+          <h5>Weaknesses</h5>
+          <ul>
+            <li><b>Standard costs 20 months stale.</b> Drives a 15.7% variance to actual and misstates
+                inventory valuation on the balance sheet.</li>
+            <li><b>Close is manual end to end.</b> 30+ journal entries and a hand-keyed production cost
+                step put the timeline at the mercy of one person's availability.</li>
+            <li><b>Incomplete documentation.</b> No close calendar, no reconciliation schedule, no written
+                procedures. The process lives in the controller's head.</li>
+            <li><b>Quarterly inventory counts.</b> Two months of every quarter carry estimated
+                inventory, which may get flagged in a quality of earnings review.</li>
+          </ul>
+        </div>
+        <div class="q o">
+          <h5>Opportunities</h5>
+          <ul>
+            <li><b>The ERP costing module is licensed and unused.</b> Actual costing is a configuration
+                exercise, not a purchase.</li>
+            <li><b>22 days to 10 without adding headcount.</b> The time is in rework and sequencing,
+                not in volume of work.</li>
+            <li><b>Margin visibility supports repricing.</b> Customer, product line and region
+                margin is computable today and has never been looked at.</li>
+            <li><b>Cycle counting is feasible.</b> Part counts are low enough that rolling counts
+                cover the population every quarter without a full physical.</li>
+          </ul>
+        </div>
+        <div class="q t">
+          <h5>Threats</h5>
+          <ul>
+            <li><b>A 22-day close rules out real-time management.</b> The exec team is acting on results
+                a month and a half old, so there is no window to correct a bad month while it is
+                still running. Buyers also read close timeline as a proxy for the quality of
+                everything else.</li>
+            <li><b>Single point of failure.</b> If the controller leaves before the process is
+                documented, the close and the sale both stall.</li>
+            <li><b>Inventory valuation is exposed.</b> Stale standards plus estimated counts is the
+                combination that produces a working capital adjustment at closing.</li>
+            <li><b>Concentration is unquantified in reporting.</b> A 15.2% customer at dilutive margin
+                will surface in diligence.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="sect"><h3>Recommendations, close timeline</h3></div>
+      <div class="tw">
+        <table>
+          <thead>
+            <tr>
+              <th>#</th><th>Action</th><th>Why it holds up the close</th>
+              <th class="n">Days</th><th>Effort</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td class="n">1</td>
+                <td><b>Interface the shop floor job tracker to the GL</b></td>
+                <td>Cost of sales is relieved at standard during the month, so at close the
+                    controller has to post a variance entry built by hand from the shop floor job
+                    tracker to bring actual labor, material and overhead into the GL. That entry is
+                    where the <span class="mono">15.7%</span> variance lands. It cannot start until
+                    every job on the floor is closed out, which is most of the delay, and it posts
+                    as a single summary number, so job-level cost never reaches the financials.</td>
+                <td class="n days">-4</td><td>IT, 3 weeks</td></tr>
+            <tr><td class="n">2</td>
+                <td><b>Move to quarterly cycle counting</b></td>
+                <td>The full physical count forces an estimate in two months of three, then a true-up
+                    that reopens the period. Rolling counts that cover the population each quarter
+                    leave no month resting on an estimate and no count to close around.</td>
+                <td class="n days">-3</td><td>Ops, ongoing</td></tr>
+            <tr><td class="n">3</td>
+                <td><b>Standardize and pre-book recurring accruals</b></td>
+                <td>Of the 30+ manual entries, roughly two thirds are the same every month. They are recalculated from
+                    scratch rather than templated.</td>
+                <td class="n days">-2</td><td>Controller, 1 week</td></tr>
+            <tr><td class="n">4</td>
+                <td><b>Publish a close calendar with owners and cutoffs</b></td>
+                <td>No dependency order means tasks wait on each other without anyone knowing the
+                    critical path.</td>
+                <td class="n days">-2</td><td>Controller, 2 days</td></tr>
+            <tr><td class="n">5</td>
+                <td><b>Hard cutoff on AP and receiving at day 2</b></td>
+                <td>Invoices are accepted into the period through the second week, so accruals get
+                    revisited repeatedly.</td>
+                <td class="n days">-1</td><td>Policy</td></tr>
+            <tr><td class="n">6</td>
+                <td><b>Put balance sheet reconciliations in the close itself</b></td>
+                <td>Accounts are reviewed when something looks wrong, which means errors surface
+                    after the financials are issued and the period reopens. A named owner, a due
+                    day and a sign-off for every balance sheet account is the step that makes a
+                    10-day close hold instead of being reopened in week three.</td>
+                <td class="n days">&mdash;</td><td>Controller, monthly</td></tr>
+            <tr><td class="n">7</td>
+                <td><b>Update standard costs annually</b></td>
+                <td>Standards are 20 months old. An annual roll at the start of the fiscal year,
+                    with purchase price variance reviewed monthly so a mid-year reset is a decision
+                    rather than a surprise, is what keeps the variance investigation from reopening
+                    cost of sales every month.</td>
+                <td class="n days">&mdash;</td><td>Controller, annual</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="snip"><b>Net effect</b>   22 business days  →  10 business days
+No additional headcount. Items 1 and 2 carry the timeline; items 3 through 5 hold it.
+Items 6 and 7 take no days out on their own. They are what stops the close from
+reopening, and item 7 is the prerequisite for the margin reporting in section 01
+to be trustworthy.</div>
+    </div>
+  </details>
+
+  <!-- ============ 3 ============ -->
+  <details class="stage" id="stage-strategic">
+    <summary>
+      <span class="num">03</span>
+      <h2 class="ttl">Strategic finance and investor reporting</h2>
+      <span class="kpi">1.34x FCC vs 1.20x test</span>
+      <span class="chev"></span>
+      <span class="teaser">Covenant compliance, a monthly board package and a five-year plan. Excerpts
+        from each, not the full deliverables.</span>
+    </summary>
+    <div class="inner">
+
+      <div class="sect"><h3>Covenant compliance</h3></div>
+      <p class="note" style="margin:0 0 12px">Quarterly certificate to the senior lender. Term loan of
+         $4.2M plus a $1.8M drawn revolver against trailing twelve month EBITDA of $1.99M.</p>
+      <div class="tw"><table id="cov"></table></div>
+      <div class="snip"><b>Commentary excerpt</b>
+Fixed charge coverage of 1.34x leaves 14 bps of headroom against the 1.20x test.
+The ratio has compressed for three consecutive quarters as scheduled amortization
+stepped up and EBITDA growth lagged revenue. On the current trajectory the test is
+reached in Q3 FY27. Recovering 150 bps of gross margin, which the repricing work in
+section 01 supports, restores headroom to roughly 0.30x.</div>
+
+      <div class="cols" style="margin-top:22px">
+        <div class="block">
+          <h4>Monthly board package</h4>
+          <p class="note">Eleven pages, issued with the close. Built once as a template and refreshed
+             from the model. The excerpt below is the November 2026 package.</p>
+          <ul>
+            <li>One-page summary with variance to plan and to prior year</li>
+            <li>P&amp;L, balance sheet and cash flow with bridge commentary</li>
+            <li>Gross margin by product line and top ten customers, with concentration</li>
+            <li>13-week cash forecast with the revolver position</li>
+            <li>Backlog, bookings and coverage in weeks</li>
+            <li>Covenant compliance with forward projection</li>
+            <li>Capex against the approved plan</li>
+            <li>Open items and decisions requested</li>
+          </ul>
+          <div class="snip"><b>Summary page excerpt &middot; November 2026</b>
+Revenue of $1.94M was $89K ahead of plan on stronger structural
+assemblies volume. Gross margin of 23.9% missed plan by 290 bps,
+of which 210 bps is raw material cost not yet recovered in
+price. EBITDA of $205K was $32K behind plan.</div>
+        </div>
+
+        <div class="block">
+          <h4>Five-year plan</h4>
+          <p class="note">Driver-based, built from a revenue plan by region, a headcount plan and the
+             margin drivers below. Not a growth percentage applied to last year.</p>
+          <div class="tw"><table id="lrp"></table></div>
+          <p class="note" style="margin:18px 0 2px"><b>Key assumptions.</b> The FY30 gross margin
+             is the sum of the first three drivers, each sized off FY26 actuals and phased in by
+             year. Capex restraint protects cash and covenant headroom; it does not move margin.</p>
+          <div class="tw"><table id="lrpa"></table></div>
+        </div>
+      </div>
+    </div>
+  </details>
+
+  <footer>
+    <span>Illustrative engagement built on generated data. No real company figures appear here.</span>
+    <span>Right Angle Finance &amp; Accounting &middot; Denver, CO</span>
+  </footer>
+</div>
+
+<div id="tip"></div>
+
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <img src="images/logo-horizontal-transparent.png" alt="Right Angle Finance &amp; Accounting">
+        <p>Fractional finance &amp; accounting services available in Denver, CO and for remote engagements nationwide.</p>
+      </div>
+      <div class="footer-col">
+        <h5>Site</h5>
+        <ul>
+          <li><a href="/#services">Services</a></li>
+          <li><a href="/#about">About</a></li>
+          <li><a href="/#process">Approach</a></li>
+          <li><a href="/case-study">Case Study</a></li>
+          <li><a href="/#contact">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5>Contact</h5>
+        <ul>
+          <li><a href="tel:+17207803880">720-780-3880</a></li>
+          <li><a href="mailto:info@rightanglecfo.com">info@rightanglecfo.com</a></li>
+          <li><a href="https://www.linkedin.com/company/rightanglecfo" target="_blank" rel="noopener">LinkedIn</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; <span id="year"></span> Right Angle Accounting &amp; Finance, LLC. All rights reserved.</span>
+      <span class="tag">Garrett Corneliussen &middot; Founder &amp; Principal &middot; Denver, CO</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+/* main.js wires the contact form without checking it exists, so it cannot run here.
+   These are the only behaviours this page needs from it. */
+(function () {
+  var header = document.getElementById('siteHeader');
+  function scrolled() { header.classList.toggle('is-scrolled', window.scrollY > 10); }
+  scrolled(); window.addEventListener('scroll', scrolled, { passive: true });
+
+  var toggle = document.getElementById('navToggle'), menu = document.getElementById('mobileMenu');
+  toggle.addEventListener('click', function () {
+    var open = menu.classList.toggle('is-open');
+    toggle.classList.toggle('is-open', open);
+    toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+    document.body.classList.toggle('menu-open', open);
+  });
+  menu.querySelectorAll('a').forEach(function (a) {
+    a.addEventListener('click', function () {
+      menu.classList.remove('is-open'); toggle.classList.remove('is-open');
+      toggle.setAttribute('aria-expanded', 'false');
+      document.body.classList.remove('menu-open');
+    });
+  });
+
+  var y = document.getElementById('year');
+  if (y) y.textContent = new Date().getFullYear();
+})();
+</script>
+
+<script>
+const D = {"quarters":[{"q":"2025-Q1","rev":3336826,"gm":29.3,"lab":"Q1'25","brev":null,"bgm":null,"rev_v":-10.8,"gm_v":180},{"q":"2025-Q2","rev":4682761,"gm":28.8,"lab":"Q2'25","brev":null,"bgm":null,"rev_v":15.0,"gm_v":130},{"q":"2025-Q3","rev":4059420,"gm":27.0,"lab":"Q3'25","brev":null,"bgm":null,"rev_v":3.7,"gm_v":-50},{"q":"2025-Q4","rev":5283183,"gm":22.8,"lab":"Q4'25","brev":null,"bgm":null,"rev_v":18.2,"gm_v":-470},{"q":"2026-Q1","rev":4235930,"gm":27.0,"lab":"Q1'26","brev":4651499,"bgm":26.8,"rev_v":-8.9,"gm_v":20},{"q":"2026-Q2","rev":5680785,"gm":24.8,"lab":"Q2'26","brev":5063866,"bgm":26.8,"rev_v":12.2,"gm_v":-200},{"q":"2026-Q3","rev":5403022,"gm":22.6,"lab":"Q3'26","brev":4865930,"bgm":26.8,"rev_v":11.0,"gm_v":-420},{"q":"2026-Q4","rev":5473222,"gm":24.1,"lab":"Q4'26","brev":5558706,"bgm":26.8,"rev_v":-1.5,"gm_v":-270}],"lines":[{"name":"Custom Fabrication","rev":22903857,"var":1721434,"gm":25.7},{"name":"Structural Assemblies","rev":12038865,"var":988618,"gm":23.0},{"name":"Precision Components","rev":2282131,"var":178368,"gm":28.5},{"name":"Replacement Parts","rev":930295,"var":53750,"gm":44.8}],"customers":[{"name":"Customer 01","rev":3157393,"gm":19.8,"share":15.2},{"name":"Customer 02","rev":1917280,"gm":20.6,"share":9.2},{"name":"Customer 03","rev":1497323,"gm":24.7,"share":7.2},{"name":"Customer 04","rev":1449844,"gm":24.1,"share":7.0},{"name":"Customer 05","rev":1250431,"gm":24.1,"share":6.0},{"name":"Customer 06","rev":1052368,"gm":22.6,"share":5.1},{"name":"Customer 07","rev":946437,"gm":24.6,"share":4.6},{"name":"Customer 08","rev":867690,"gm":25.4,"share":4.2},{"name":"Customer 09","rev":711891,"gm":25.3,"share":3.4},{"name":"Customer 10","rev":703307,"gm":23.8,"share":3.4}],"lineYear":[{"name":"Custom Fabrication","year":2025,"gm":27.0},{"name":"Custom Fabrication","year":2026,"gm":24.6},{"name":"Precision Components","year":2025,"gm":30.8},{"name":"Precision Components","year":2026,"gm":26.5},{"name":"Replacement Parts","year":2025,"gm":46.5},{"name":"Replacement Parts","year":2026,"gm":43.5},{"name":"Structural Assemblies","year":2025,"gm":23.6},{"name":"Structural Assemblies","year":2026,"gm":22.5}],"payroll":[{"m":"2025-01","otpct":4.1,"prem":4993,"t3":null,"t6":null},{"m":"2025-02","otpct":4.7,"prem":5381,"t3":null,"t6":null},{"m":"2025-03","otpct":5.0,"prem":6773,"t3":4.6,"t6":null},{"m":"2025-04","otpct":5.5,"prem":7802,"t3":5.1,"t6":null},{"m":"2025-05","otpct":6.6,"prem":9002,"t3":5.7,"t6":null},{"m":"2025-06","otpct":6.4,"prem":8967,"t3":6.2,"t6":5.4},{"m":"2025-07","otpct":7.2,"prem":8783,"t3":6.7,"t6":5.9},{"m":"2025-08","otpct":8.0,"prem":11171,"t3":7.2,"t6":6.4},{"m":"2025-09","otpct":7.8,"prem":11588,"t3":7.7,"t6":6.9},{"m":"2025-10","otpct":8.5,"prem":13601,"t3":8.1,"t6":7.4},{"m":"2025-11","otpct":9.0,"prem":14171,"t3":8.4,"t6":7.8},{"m":"2025-12","otpct":9.5,"prem":14949,"t3":9.0,"t6":8.3},{"m":"2026-01","otpct":9.3,"prem":12942,"t3":9.3,"t6":8.7},{"m":"2026-02","otpct":10.4,"prem":13215,"t3":9.7,"t6":9.1},{"m":"2026-03","otpct":11.6,"prem":17569,"t3":10.4,"t6":9.7},{"m":"2026-04","otpct":10.3,"prem":15965,"t3":10.8,"t6":10.0},{"m":"2026-05","otpct":12.2,"prem":19326,"t3":11.4,"t6":10.5},{"m":"2026-06","otpct":12.2,"prem":18042,"t3":11.6,"t6":11.0},{"m":"2026-07","otpct":12.2,"prem":15971,"t3":12.2,"t6":11.5},{"m":"2026-08","otpct":14.6,"prem":22763,"t3":13.0,"t6":12.2},{"m":"2026-09","otpct":14.1,"prem":23972,"t3":13.6,"t6":12.6},{"m":"2026-10","otpct":13.1,"prem":22812,"t3":13.9,"t6":13.1},{"m":"2026-11","otpct":14.5,"prem":25101,"t3":13.9,"t6":13.4},{"m":"2026-12","otpct":15.3,"prem":28880,"t3":14.3,"t6":14.0}],"depts":[{"name":"Machining","otpct":15.8,"prem":257553},{"name":"Fabrication","otpct":9.9,"prem":233279},{"name":"Welding","otpct":15.8,"prem":166788},{"name":"Finishing","otpct":9.9,"prem":52054}],"backlog":[{"m":"2025-01","val":3203065,"wk":10.4,"age":26},{"m":"2025-02","val":3255191,"wk":11.4,"age":27},{"m":"2025-03","val":3581173,"wk":10.7,"age":29},{"m":"2025-04","val":3966119,"wk":12.1,"age":30},{"m":"2025-05","val":3785896,"wk":10.1,"age":31},{"m":"2025-06","val":3752478,"wk":10.4,"age":32},{"m":"2025-07","val":3825915,"wk":13.2,"age":33},{"m":"2025-08","val":3967206,"wk":11.0,"age":35},{"m":"2025-09","val":4189866,"wk":11.1,"age":36},{"m":"2025-10","val":4399723,"wk":10.3,"age":37},{"m":"2025-11","val":4245180,"wk":9.9,"age":39},{"m":"2025-12","val":4373741,"wk":9.7,"age":42},{"m":"2026-01","val":4300398,"wk":11.1,"age":43},{"m":"2026-02","val":4391725,"wk":12.8,"age":45},{"m":"2026-03","val":4554944,"wk":12.9,"age":43},{"m":"2026-04","val":4611484,"wk":10.9,"age":42},{"m":"2026-05","val":4790674,"wk":11.9,"age":47},{"m":"2026-06","val":4983671,"wk":13.9,"age":46},{"m":"2026-07","val":4883652,"wk":13.5,"age":50},{"m":"2026-08","val":4981089,"wk":12.8,"age":49},{"m":"2026-09","val":5269900,"wk":12.9,"age":53},{"m":"2026-10","val":5931633,"wk":14.2,"age":53},{"m":"2026-11","val":6290759,"wk":15.2,"age":57},{"m":"2026-12","val":6472284,"wk":13.5,"age":59}],"totals":{"rev25":17362190,"rev26":20792958,"gm25":26.6,"gm26":24.5,"var26":2126712,"varpct26":15.7,"dso":53,"revgrowth":19.8,"ot25":7.0,"ot26":12.6,"prem26":236558,"premTot":353739,"head26":61,"bl_start":3203062,"bl_end":4740535,"bl_growth":48,"wk_start":9.6,"wk_end":11.9,"age_start":26,"age_end":42,"cagr":19.8,"gm_bps":-216,"gp25":4624734,"gp26":5090312,"t3_gm":24.3,"t6_gm":23.5,"t3_ot":14.3,"t6_ot":14.0,"brev25":16200000,"brev26":20140000,"bgm25":27.5,"bgm26":26.8,"rev_v26":3.2,"gm_v26":-230,"ebitda":1986312,"bebitda26":2420000,"ebitda_v26":-17.9,"lq_lab":"Q4'26","lq_rev_v":-1.5,"lq_gm_v":-270,"lq_rev":5473222,"lq_gm":24.1,"ccc_start":58.6,"ccc_end":73.8,"nwc_start":2362728,"nwc_end":4873649,"dio_start":47.5,"dio_end":64.2,"dpo_start":33.2,"dpo_end":41.7,"dso_start":44.3,"dso_end":51.3,"n_cust":41,"top20_pct26":65.2,"top20_pct25":64.7,"top1_name":"Customer 01","top1_sh":15.2,"top1_gm":19.8,"port_ex_gm":25.3,"top1_bps":-555,"ebitda25":1858734,"ni25":571297,"ni26":568690,"br":{"Volume":650997,"Price":986792,"Product mix":29912,"Raw materials":-973075,"Direct labor":-160918,"Overhead":-3778,"Scrap & rework":-64352},"mbr":{"Price":347,"Product mix":15,"Raw materials":-468,"Direct labor":-77,"Overhead":-2,"Scrap & rework":-31},"gm25x":26.6,"gm26x":24.5,"nm25":3.3,"nm26":2.7,"nmP":4.6,"ebm25":10.7,"ebm26":9.6,"ebmP":12.0,"inc_rev":3430768,"inc_eb":127578,"flow":3.7,"rg_top":"West","rg_top_sh":46.0,"rg_top_gm":22.5,"rg_top_bps":-200,"rg_fast":"Outside US","rg_fast_g":33.4,"ot_pay26":709674,"ot_payTot":1061218,"ot_sh25":10.2,"ot_sh26":18.0,"gm30":28.1},"bridge":[{"label":"FY25 gross profit","val":4624734,"kind":"total"},{"label":"Volume","val":650997,"kind":"step"},{"label":"Price","val":986792,"kind":"step"},{"label":"Product mix","val":29912,"kind":"step"},{"label":"Raw materials","val":-973075,"kind":"step"},{"label":"Direct labor","val":-160918,"kind":"step"},{"label":"Overhead","val":-3778,"kind":"step"},{"label":"Scrap & rework","val":-64352,"kind":"step"},{"label":"FY26 gross profit","val":5090312,"kind":"total"}],"months":[{"m":"2025-01","rev":1364268,"gm":29.5,"t3":null,"t6":null},{"m":"2025-02","rev":948285,"gm":30.9,"t3":null,"t6":null},{"m":"2025-03","rev":1024273,"gm":27.6,"t3":29.3,"t6":null},{"m":"2025-04","rev":1265146,"gm":30.1,"t3":29.5,"t6":null},{"m":"2025-05","rev":2173844,"gm":26.9,"t3":28.2,"t6":null},{"m":"2025-06","rev":1243771,"gm":31.0,"t3":29.3,"t6":29.3},{"m":"2025-07","rev":1178769,"gm":27.2,"t3":28.4,"t6":29.0},{"m":"2025-08","rev":1020585,"gm":26.4,"t3":28.2,"t6":28.2},{"m":"2025-09","rev":1860065,"gm":27.1,"t3":26.9,"t6":28.1},{"m":"2025-10","rev":1731572,"gm":24.5,"t3":26.0,"t6":27.2},{"m":"2025-11","rev":1289930,"gm":18.1,"t3":23.2,"t6":25.7},{"m":"2025-12","rev":2261681,"gm":24.0,"t3":22.2,"t6":24.6},{"m":"2026-01","rev":1227211,"gm":26.6,"t3":22.9,"t6":24.4},{"m":"2026-02","rev":1724447,"gm":27.3,"t3":26.0,"t6":24.6},{"m":"2026-03","rev":1284271,"gm":26.8,"t3":26.9,"t6":24.6},{"m":"2026-04","rev":1332258,"gm":24.1,"t3":26.1,"t6":24.5},{"m":"2026-05","rev":2123036,"gm":27.2,"t3":26.0,"t6":26.0},{"m":"2026-06","rev":2225491,"gm":23.0,"t3":24.8,"t6":25.8},{"m":"2026-07","rev":2007531,"gm":23.3,"t3":24.5,"t6":25.3},{"m":"2026-08","rev":2035982,"gm":21.1,"t3":22.5,"t6":24.2},{"m":"2026-09","rev":1359509,"gm":23.7,"t3":22.7,"t6":23.7},{"m":"2026-10","rev":2078021,"gm":22.9,"t3":22.6,"t6":23.5},{"m":"2026-11","rev":1941870,"gm":23.9,"t3":23.5,"t6":23.0},{"m":"2026-12","rev":1453331,"gm":26.0,"t3":24.3,"t6":23.5}],"fin":{"ebitda":1986312,"ebitda_pct":9.6,"opex":3104000,"term":4200000,"revolver":1800000,"debt":6000000,"covenants":[{"name":"Total leverage","test":"\u2264 3.50x","actual":"3.01x","head":"0.49x","state":"pass"},{"name":"Fixed charge coverage","test":"\u2265 1.20x","actual":"1.34x","head":"0.14x","state":"watch"},{"name":"Minimum EBITDA (TTM)","test":"\u2265 $1.75M","actual":"$1.99M","head":"$236K","state":"pass"},{"name":"Maximum capex","test":"\u2264 $900K","actual":"$742K","head":"$158K","state":"pass"}],"lrp":[{"y":"FY25A","rev":17.36,"gm":26.6,"ebitda":1.86,"rv":16.5,"ev":14.8},{"y":"FY26A","rev":20.79,"gm":24.5,"ebitda":1.99,"rv":19.8,"ev":7.0},{"y":"FY27P","rev":23.1,"gm":25.5,"ebitda":2.51,"rv":11.1,"ev":26.1},{"y":"FY28P","rev":25.6,"gm":26.5,"ebitda":3.11,"rv":10.8,"ev":23.9},{"y":"FY29P","rev":28.0,"gm":27.3,"ebitda":3.68,"rv":9.4,"ev":18.3},{"y":"FY30P","rev":30.2,"gm":28.1,"ebitda":4.26,"rv":7.9,"ev":15.8}]},"wc":[{"m":"2025-03","ar":1622437,"inv":1227704,"ap":487414,"dso":44.3,"dio":47.5,"dpo":33.2,"ccc":58.6,"nwc":2362728},{"m":"2025-04","ar":1612850,"inv":1111434,"ap":455550,"dso":45.4,"dio":44.4,"dpo":31.7,"ccc":58.2,"nwc":2268733},{"m":"2025-05","ar":2139850,"inv":1758888,"ap":665830,"dso":43.7,"dio":49.9,"dpo":32.9,"ccc":60.7,"nwc":3232908},{"m":"2025-06","ar":2286804,"inv":1688247,"ap":757050,"dso":44.5,"dio":46.2,"dpo":36.2,"ccc":54.5,"nwc":3218001},{"m":"2025-07","ar":2236369,"inv":1896383,"ap":684675,"dso":44.4,"dio":52.3,"dpo":32.9,"ccc":63.8,"nwc":3448077},{"m":"2025-08","ar":1777228,"inv":1422600,"ap":509668,"dso":47.1,"dio":52.6,"dpo":32.7,"ccc":67.0,"nwc":2690160},{"m":"2025-09","ar":2068382,"inv":1748335,"ap":650857,"dso":46.5,"dio":53.8,"dpo":34.4,"ccc":65.9,"nwc":3165860},{"m":"2025-10","ar":2459094,"inv":2042936,"ap":809135,"dso":48.6,"dio":54.6,"dpo":37.2,"ccc":66.0,"nwc":3692895},{"m":"2025-11","ar":2571887,"inv":2217386,"ap":905794,"dso":48.0,"dio":54.4,"dpo":38.0,"ccc":64.5,"nwc":3883479},{"m":"2025-12","ar":2838270,"inv":2397915,"ap":912508,"dso":49.0,"dio":53.6,"dpo":34.9,"ccc":67.6,"nwc":4323677},{"m":"2026-01","ar":2546284,"inv":2207919,"ap":882767,"dso":48.6,"dio":54.8,"dpo":37.4,"ccc":66.0,"nwc":3871437},{"m":"2026-02","ar":2858745,"inv":2511056,"ap":928894,"dso":50.0,"dio":59.1,"dpo":37.2,"ccc":71.9,"nwc":4440908},{"m":"2026-03","ar":2292161,"inv":1892998,"ap":741105,"dso":49.4,"dio":55.8,"dpo":37.0,"ccc":68.1,"nwc":3444054},{"m":"2026-04","ar":2315426,"inv":2012633,"ap":747668,"dso":48.6,"dio":57.3,"dpo":35.9,"ccc":70.0,"nwc":3580391},{"m":"2026-05","ar":2689238,"inv":2186143,"ap":904766,"dso":51.7,"dio":57.0,"dpo":39.8,"ccc":68.9,"nwc":3970615},{"m":"2026-06","ar":3232389,"inv":2725938,"ap":1062629,"dso":51.9,"dio":58.2,"dpo":38.1,"ccc":72.0,"nwc":4895698},{"m":"2026-07","ar":3758993,"inv":3127554,"ap":1253115,"dso":53.9,"dio":59.4,"dpo":40.0,"ccc":73.4,"nwc":5633431},{"m":"2026-08","ar":3523010,"inv":3272771,"ap":1278586,"dso":51.3,"dio":61.4,"dpo":40.2,"ccc":72.5,"nwc":5517194},{"m":"2026-09","ar":3025854,"inv":2798942,"ap":1180285,"dso":51.1,"dio":61.0,"dpo":42.8,"ccc":69.3,"nwc":4644511},{"m":"2026-10","ar":3020536,"inv":2870294,"ap":1182301,"dso":50.3,"dio":61.7,"dpo":42.5,"ccc":69.5,"nwc":4708530},{"m":"2026-11","ar":2803712,"inv":2792562,"ap":1079352,"dso":47.5,"dio":61.9,"dpo":40.1,"ccc":69.3,"nwc":4516922},{"m":"2026-12","ar":3076669,"inv":2925465,"ap":1128485,"dso":51.3,"dio":64.2,"dpo":41.7,"ccc":73.8,"nwc":4873649}],"blLines":["Custom Fabrication","Structural Assemblies","Precision Components","Replacement Parts"],"backlogLine":[{"m":"2025-01","total":3203062,"age":26,"Custom Fabrication":1922742,"Structural Assemblies":1010643,"Precision Components":191581,"Replacement Parts":78096},{"m":"2025-02","total":3227579,"age":26,"Custom Fabrication":1934957,"Structural Assemblies":1019209,"Precision Components":194002,"Replacement Parts":79411},{"m":"2025-03","total":3380883,"age":27,"Custom Fabrication":2024241,"Structural Assemblies":1068489,"Precision Components":204218,"Replacement Parts":83935},{"m":"2025-04","total":3561917,"age":28,"Custom Fabrication":2129866,"Structural Assemblies":1126621,"Precision Components":216209,"Replacement Parts":89221},{"m":"2025-05","total":3477162,"age":28,"Custom Fabrication":2076483,"Structural Assemblies":1100710,"Precision Components":212096,"Replacement Parts":87873},{"m":"2025-06","total":3461444,"age":29,"Custom Fabrication":2064403,"Structural Assemblies":1096629,"Precision Components":212165,"Replacement Parts":88247},{"m":"2025-07","total":3495981,"age":29,"Custom Fabrication":2082278,"Structural Assemblies":1108473,"Precision Components":215321,"Replacement Parts":89909},{"m":"2025-08","total":3562430,"age":30,"Custom Fabrication":2119078,"Structural Assemblies":1130464,"Precision Components":220474,"Replacement Parts":92414},{"m":"2025-09","total":3667144,"age":31,"Custom Fabrication":2178505,"Structural Assemblies":1164642,"Precision Components":228047,"Replacement Parts":95950},{"m":"2025-10","total":3765836,"age":31,"Custom Fabrication":2234193,"Structural Assemblies":1196961,"Precision Components":235307,"Replacement Parts":99375},{"m":"2025-11","total":3693155,"age":32,"Custom Fabrication":2188186,"Structural Assemblies":1174818,"Precision Components":231867,"Replacement Parts":98284},{"m":"2025-12","total":3753618,"age":34,"Custom Fabrication":2221072,"Structural Assemblies":1195026,"Precision Components":236785,"Replacement Parts":100735},{"m":"2026-01","total":3719125,"age":34,"Custom Fabrication":2197748,"Structural Assemblies":1185012,"Precision Components":235721,"Replacement Parts":100644},{"m":"2026-02","total":3762075,"age":35,"Custom Fabrication":2220179,"Structural Assemblies":1199676,"Precision Components":239568,"Replacement Parts":102652},{"m":"2026-03","total":3838834,"age":34,"Custom Fabrication":2262465,"Structural Assemblies":1225152,"Precision Components":245607,"Replacement Parts":105610},{"m":"2026-04","total":3865424,"age":34,"Custom Fabrication":2275100,"Structural Assemblies":1234646,"Precision Components":248467,"Replacement Parts":107211},{"m":"2026-05","total":3949696,"age":36,"Custom Fabrication":2321594,"Structural Assemblies":1262594,"Precision Components":255069,"Replacement Parts":110439},{"m":"2026-06","total":4040460,"age":36,"Custom Fabrication":2371764,"Structural Assemblies":1292663,"Precision Components":262145,"Replacement Parts":113888},{"m":"2026-07","total":3993421,"age":38,"Custom Fabrication":2341005,"Structural Assemblies":1278659,"Precision Components":260293,"Replacement Parts":113464},{"m":"2026-08","total":4039246,"age":37,"Custom Fabrication":2364682,"Structural Assemblies":1294388,"Precision Components":264497,"Replacement Parts":115679},{"m":"2026-09","total":4175068,"age":39,"Custom Fabrication":2440901,"Structural Assemblies":1339006,"Precision Components":274648,"Replacement Parts":120513},{"m":"2026-10","total":4486274,"age":39,"Custom Fabrication":2619298,"Structural Assemblies":1439991,"Precision Components":296473,"Replacement Parts":130512},{"m":"2026-11","total":4655167,"age":41,"Custom Fabrication":2714223,"Structural Assemblies":1495423,"Precision Components":309040,"Replacement Parts":136481},{"m":"2026-12","total":4740535,"age":42,"Custom Fabrication":2760245,"Structural Assemblies":1524092,"Precision Components":316139,"Replacement Parts":140059}],"conc":{"FY25":{"top":11226932,"rest":6135257,"n_rest":31,"top_pct":64.7,"rest_pct":35.3,"top_gm":25.1,"rest_gm":29.4},"FY26":{"top":13553965,"rest":7238993,"n_rest":31,"top_pct":65.2,"rest_pct":34.8,"top_gm":22.7,"rest_gm":27.8},"total":41},"wcPlan":{"dio":48,"dso":45,"dpo":35},"pnl":[{"label":"Revenue","v":20792958,"p":20140000,"kind":"total","y25":17362190},{"label":"COGS","v":-15702646,"p":-14742480,"kind":"step","y25":-12737456},{"label":"Gross profit","v":5090312,"p":5397520,"kind":"sub","y25":4624734},{"label":"SG&A","v":-2790000,"p":-2657520,"kind":"step","y25":-2470000},{"label":"R&D","v":-314000,"p":-320000,"kind":"step","y25":-296000},{"label":"EBITDA","v":1986312,"p":2420000,"kind":"sub","y25":1858734},{"label":"D&A","v":-731000,"p":-715000,"kind":"step","y25":-668000},{"label":"Interest","v":-509000,"p":-486000,"kind":"step","y25":-441000},{"label":"Taxes","v":-177622,"p":-290122,"kind":"step","y25":-178437},{"label":"Net income","v":568690,"p":928878,"kind":"sub","y25":571297}],"pnl25_ebitda_pct":10.7,"mbridge":[{"label":"FY25 gross margin","val":26.64,"kind":"total"},{"label":"Price","val":347,"kind":"step"},{"label":"Product mix","val":15,"kind":"step"},{"label":"Raw materials","val":-468,"kind":"step"},{"label":"Direct labor","val":-77,"kind":"step"},{"label":"Overhead","val":-2,"kind":"step"},{"label":"Scrap & rework","val":-31,"kind":"step"},{"label":"FY26 gross margin","val":24.48,"kind":"total"}],"mrc":{"rows":[{"name":"Cost of sales","y25":-216,"pl":-232},{"name":"SG&A","y25":81,"pl":-22},{"name":"R&D","y25":19,"pl":8},{"name":"Deprec. & amort.","y25":33,"pl":3},{"name":"Interest","y25":9,"pl":-3},{"name":"Taxes","y25":17,"pl":59}],"nm":[3.29,4.61,2.74],"tot_y25":-56,"tot_pl":-188},"regions":{"rows":[{"key":"West","name":"West","rev":9573850,"rev25":7762684,"share":46.0,"gm":22.5,"gm25":24.2,"growth":23.3,"n":11},{"key":"MW","name":"Midwest","rev":4188807,"rev25":3659201,"share":20.1,"gm":26.1,"gm25":28.9,"growth":14.5,"n":9},{"key":"NE","name":"Northeast","rev":3318184,"rev25":2970367,"share":16.0,"gm":25.8,"gm25":27.8,"growth":11.7,"n":8},{"key":"SE","name":"Southeast","rev":2687881,"rev25":2201956,"share":12.9,"gm":26.4,"gm25":28.6,"growth":22.1,"n":8},{"key":"OUS","name":"Outside US","rev":1024235,"rev25":767982,"share":4.9,"gm":27.2,"gm25":30.7,"growth":33.4,"n":5}],"port":24.5},"lrpAssump":[{"name":"Price increases","metric":"+3.0% a year","text":"Incremental increases across every product line at 3.0% a year against 2.0% input cost inflation. In FY26 price covered material cost and nothing else; this assumes it stops doing that."},{"name":"Overtime","metric":"18.0% &rarr; 11.0% of payroll","text":"Back to roughly the 10.2% the company ran in FY25, through scheduling and cross-training rather than added capacity. Worth $92K a year, which is the extra cost of running those hours at time and a half."},{"name":"Geographic expansion","metric":"54% &rarr; 62% non-West","text":"Growth concentrated in the four under-penetrated regions, which earn 26.2% against the West's 22.5%."},{"name":"Restrained capex","metric":"3.6% &rarr; 2.0% of revenue","text":"Maintenance and repair projects only, no capacity spend. This protects cash and headroom against the $900K capex covenant ahead of a sale. It does not move margin, and the margin path above does not assume it does."}]};
+
+const T = D.totals;
+
+const tip = document.getElementById('tip');
+function bindTip(node, text){
+  node.addEventListener('pointerenter', () => { tip.textContent = text; tip.style.opacity = 1; });
+  node.addEventListener('pointermove', e => {
+    tip.style.left = Math.min(e.clientX + 14, innerWidth - 210) + 'px';
+    tip.style.top  = (e.clientY - 52) + 'px';
+  });
+  node.addEventListener('pointerleave', () => tip.style.opacity = 0);
+}
+const money = n => (n<0?'-':'') + '$' + (Math.abs(n)/1e6).toFixed(2) + 'M';
+const k = n => (n<0?'-':'') + '$' + Math.round(Math.abs(n)/1e3).toLocaleString() + 'K';
+/* accounting convention: a negative percent is parenthesised with the sign inside,
+   (17.9%), never -17.9% and never (17.9)% */
+const pct = n => n < 0 ? '(' + Math.abs(n).toFixed(1) + '%)' : (+n).toFixed(1) + '%';
+const SVGNS = 'http://www.w3.org/2000/svg';
+function el(tag, a={}){ const n = document.createElementNS(SVGNS, tag);
+  for (const x in a) n.setAttribute(x, a[x]); return n; }
+function svg(host, w, h){ const d = document.getElementById(host); d.innerHTML='';
+  const s = el('svg', {viewBox:'0 0 '+w+' '+h, role:'img'}); d.appendChild(s); return s; }
+function txt(s, x, y, cls, anchor, str){
+  const t = el('text', {x, y, class:cls, 'text-anchor':anchor||'start'});
+  t.textContent = str; s.appendChild(t); return t;
+}
+function segmented(host, opts, onPick, initial){
+  const d = document.getElementById(host); d.innerHTML='';
+  opts.forEach(o => {
+    const b = document.createElement('button');
+    b.textContent = o.label; b.setAttribute('aria-pressed', o.key===initial);
+    b.onclick = () => { [...d.children].forEach(c=>c.setAttribute('aria-pressed','false'));
+      b.setAttribute('aria-pressed','true'); onPick(o.key); };
+    d.appendChild(b);
+  });
+  onPick(initial);
+}
+
+/* ---- tiles ---- */
+/* accounting convention in the callouts: negatives carry parentheses, not a sign */
+const par = (n, f) => n < 0 ? '(' + f(Math.abs(n)) + ')' : f(n);
+const kP  = n => par(n, v => '$' + Math.round(v/1e3).toLocaleString() + 'K');
+const bpsP = n => par(n, v => Math.round(v)) + ' bps';
+
+document.getElementById('tiles').innerHTML = [
+  ['Revenue FY26', money(T.rev26), 'CAGR ' + T.cagr + '%'],
+  ['Revenue vs plan', (T.rev_v26>0?'+':'') + T.rev_v26 + '%', kP(T.rev26-T.brev26) + ' favorable to plan'],
+  ['Gross margin FY26', pct(T.gm26), bpsP(T.gm_v26) + ' vs plan · ' + bpsP(T.gm_bps) + ' vs FY25'],
+  ['EBITDA FY26', money(T.ebitda), pct(T.ebitda_v26) + ' vs plan · ' + kP(T.ebitda-T.bebitda26)],
+  // not PPV: this is the whole cost of sales against standard, material, labor,
+  // overhead and scrap together, so it cannot be labelled a purchase price variance
+  ['COGS variance', money(T.var26), pct(T.varpct26) + ' over standard'],
+  ['Cash conversion', T.ccc_end + ' days', '+' + Math.round(T.ccc_end-T.ccc_start) + ' days since FY25'],
+].map(([a,b,c]) =>
+  '<div class="tile"><div class="k">'+a+'</div><div class="v">'+b+'</div>' +
+  '<div class="d">'+c+'</div></div>').join('');
+
+/* ================= 1. revenue + gross margin, period switchable ================= */
+const P1 = {
+  FY:  {rows: D.quarters.map(r=>({lab:r.lab, rev:r.rev, gm:r.gm, brev:r.brev, bgm:r.bgm,
+                                  rev_v:r.rev_v, gm_v:r.gm_v})), bud:true,
+        note: 'FY26 revenue ' + (T.rev_v26>0?'+':'') + T.rev_v26 + '% and gross margin ' +
+              bpsP(T.gm_v26) + ' against plan.'},
+  T6M: {rows: D.months.slice(-6).map(r=>({lab:mlab(r.m), rev:r.rev, gm:r.gm})),
+        note: 'Trailing six months. Average gross margin ' + pct(T.t6_gm) + ' against ' + pct(T.gm25) + ' in FY25.'},
+  T3M: {rows: D.months.slice(-3).map(r=>({lab:mlab(r.m), rev:r.rev, gm:r.gm})),
+        note: 'Trailing three months. Average gross margin ' + pct(T.t3_gm) + '.'}
+};
+function mlab(m){
+  const M=['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
+  return M[+m.slice(5,7)-1] + "'" + m.slice(2,4);
+}
+function draw1(key){
+  const cfg = P1[key];
+  document.getElementById('n1').textContent = cfg.note;
+  twoPanel('c1', cfg.rows, {
+    bar:d=>d.rev, line:d=>d.gm,
+    barBud: cfg.bud ? (d=>d.brev) : null,
+    lineBud: cfg.bud ? (d=>d.bgm) : null,
+    barTick:v=>'$'+(v/1e6).toFixed(1)+'M', lineTick:v=>pct(v),
+    barLabel:'REVENUE', lineLabel:'GROSS MARGIN',
+    tip:d=>d.lab + '\n' + money(d.rev) + ' revenue\n' + pct(d.gm) + ' gross margin',
+    xlab:d=>d.lab
+  });
+}
+segmented('seg1', [{key:'FY',label:'FY25-26'},{key:'T6M',label:'T6M'},{key:'T3M',label:'T3M'}], draw1, 'FY');
+
+/* ---- shared: bars over a line, two panels on one timeline ---- */
+function twoPanel(host, rows, opt){
+  const W = opt.w || 520, H = opt.h || 320, L = 52, R = 14, T0 = 16;
+  const SPLIT = Math.round(H*0.55), GAP = 42, B = H - 26;
+  const s = svg(host, W, H), n = rows.length;
+  const maxB = Math.max(...rows.map(opt.bar)) * 1.08;
+  const step = (W-L-R)/n, bw = step * (n > 12 ? 0.74 : n < 5 ? 0.42 : 0.62);
+  const x = i => L + step*i + step/2;
+
+  [0, maxB/2, maxB].forEach(v => {
+    const y = SPLIT - (v/maxB)*(SPLIT-T0);
+    s.appendChild(el('line',{x1:L,x2:W-R,y1:y,y2:y,class:'gl'}));
+    txt(s, L-7, y+3.5, 'vl', 'end', opt.barTick(v));
+  });
+  txt(s, L, T0-4, 'ax', 'start', opt.barLabel).setAttribute('font-weight','600');
+  rows.forEach((d,i) => {
+    const h = (opt.bar(d)/maxB)*(SPLIT-T0);
+    const r = el('rect',{x:x(i)-bw/2, y:SPLIT-h, width:bw, height:Math.max(h,1), rx:2,
+      fill:'var(--accent)', class:'mark'});
+    bindTip(r, opt.tip(d)); s.appendChild(r);
+    if (opt.barBud && opt.barBud(d) != null){
+      const by = SPLIT - (opt.barBud(d)/maxB)*(SPLIT-T0);
+      s.appendChild(el('line',{x1:x(i)-bw/2-3, x2:x(i)+bw/2+3, y1:by, y2:by,
+        stroke:'var(--ink)', 'stroke-width':2, 'stroke-linecap':'round'}));
+    }
+  });
+
+  const gT = SPLIT+GAP, gB = B-16;
+  const vals = rows.map(opt.line)
+    .concat(opt.lineBud ? rows.map(opt.lineBud).filter(v=>v!=null) : []);
+  const lo = Math.floor(Math.min(...vals)-1.5), hi = Math.ceil(Math.max(...vals)+1.5);
+  const gy = v => gB - ((v-lo)/(hi-lo))*(gB-gT);
+  [lo,(lo+hi)/2,hi].forEach(v => {
+    s.appendChild(el('line',{x1:L,x2:W-R,y1:gy(v),y2:gy(v),class:'gl'}));
+    txt(s, L-7, gy(v)+3.5, 'vl', 'end', opt.lineTick(v));
+  });
+  txt(s, L, gT-9, 'ax', 'start', opt.lineLabel).setAttribute('font-weight','600');
+  if (opt.lineBud){
+    const seg = rows.map((d,i)=> opt.lineBud(d)==null ? null : x(i)+','+gy(opt.lineBud(d)))
+                    .filter(Boolean);
+    if (seg.length > 1){
+      s.appendChild(el('path',{d:'M'+seg.join('L'), fill:'none', stroke:'var(--ink-3)',
+        'stroke-width':1.6, 'stroke-dasharray':'5 3'}));
+      txt(s, W-R, gy(opt.lineBud(rows[rows.length-1]))-7, 'vl', 'end', 'plan');
+    }
+  }
+  s.appendChild(el('path',{d:'M'+rows.map((d,i)=>x(i)+','+gy(opt.line(d))).join('L'),
+    fill:'none', stroke:'var(--accent-2)', 'stroke-width':2.2,
+    'stroke-linejoin':'round','stroke-linecap':'round'}));
+  rows.forEach((d,i) => {
+    if (n <= 12 || i % 3 === 0 || i === n-1){
+      const c = el('circle',{cx:x(i), cy:gy(opt.line(d)), r: n>12?3.6:4.5, fill:'var(--accent-2)',
+        stroke:'var(--panel)','stroke-width':2, class:'mark'});
+      bindTip(c, opt.tip(d)); s.appendChild(c);
+    }
+    if (i===0 || i===n-1)
+      txt(s, x(i), gy(opt.line(d))+17, 'vl em', i===0?'start':'end', opt.lineTick(opt.line(d)));
+    const lab = opt.xlab(d,i);
+    if (lab !== null) txt(s, x(i), B+9, 'ax', 'middle', lab);
+  });
+}
+
+/* ================= 2. gross profit bridge ================= */
+(function(){
+  const W=520, H=330, L=54, R=14, T0=18, B=H-56;
+  const s = svg('c2', W, H), rows = D.bridge;
+  let run = 0; const segs = rows.map(d => {
+    if (d.kind === 'total'){ run = d.val; return {d, from:0, to:d.val}; }
+    const from = run; run += d.val; return {d, from, to:run};
+  });
+  const hi = Math.max(...segs.flatMap(x=>[x.from,x.to])) * 1.06;
+  const Y = v => B - (v/hi)*(B-T0);
+  for (let v=0; v<=hi; v+=1e6){
+    s.appendChild(el('line',{x1:L,x2:W-R,y1:Y(v),y2:Y(v),class:'gl'}));
+    txt(s, L-7, Y(v)+3.5, 'vl', 'end', '$'+(v/1e6).toFixed(0)+'M');
+  }
+  const step=(W-L-R)/segs.length, bw=step*0.6;
+  segs.forEach((g,i)=>{
+    const cx = L+step*i+step/2;
+    const top = Math.min(Y(g.from), Y(g.to)), h = Math.abs(Y(g.to)-Y(g.from));
+    const total = g.d.kind==='total', up = g.d.val >= 0;
+    const r = el('rect',{x:cx-bw/2, y: total?Y(g.to):top, width:bw,
+      height: total ? B-Y(g.to) : Math.max(h,1.5), rx:2,
+      fill: total ? 'var(--ink-2)' : (up ? 'var(--accent)' : 'var(--accent-2)'), class:'mark'});
+    bindTip(r, g.d.label + '\n' + (total ? money(g.d.val) : (up?'+':'') + k(g.d.val)));
+    s.appendChild(r);
+    if (i < segs.length-1)
+      s.appendChild(el('line',{x1:cx+bw/2, x2:cx+step-bw/2,
+        y1:Y(g.to), y2:Y(g.to), stroke:'var(--ink-3)','stroke-width':1,
+        'stroke-dasharray':'2 2'}));
+    txt(s, cx, (total?Y(g.to):top)-6, 'vl em', 'middle',
+        total ? '$'+(g.d.val/1e6).toFixed(2)+'M' : (up?'+':'') + k(g.d.val));
+    g.d.label.split(' ').forEach((w,wi)=> txt(s, cx, B+16+wi*11, 'ax', 'middle', w));
+  });
+})();
+
+/* ================= 2b. gross MARGIN bridge, in bps on a rate axis =============
+   Endpoints are margin percentages; the steps are basis points. Both plot on one
+   axis measured in margin %, truncated because 216 bps of movement is invisible
+   against a 0-to-27% range. Volume is absent by construction, not by omission. */
+function rateBridge(host, rows){
+  const W=520, H=330, L=50, R=14, T0=26, B=H-56;
+  const s = svg(host, W, H);
+  let run = 0;
+  const segs = rows.map(d => {
+    if (d.kind === 'total'){ run = d.val; return {d, from:run, to:run}; }
+    const from = run; run += d.val/100; return {d, from, to:run};
+  });
+  const vals = segs.flatMap(g=>[g.from, g.to]);
+  // floor dropped a further 2 points below the data: the axis has to be truncated for
+  // 216 bps of movement to be legible at all, and a lower floor keeps the two endpoint
+  // columns closer to their true ratio
+  const lo = Math.floor(Math.min(...vals)/2)*2 - 4, hi = Math.ceil(Math.max(...vals)/2)*2;
+  const Y = v => B - ((v-lo)/(hi-lo))*(B-T0);
+  for (let v=lo; v<=hi+1e-9; v+=2){
+    s.appendChild(el('line',{x1:L,x2:W-R,y1:Y(v),y2:Y(v),class:'gl'}));
+    txt(s, L-7, Y(v)+3.5, 'vl', 'end', v+'%');
+  }
+  txt(s, L, T0-10, 'ax', 'start', 'GROSS MARGIN').setAttribute('font-weight','600');
+
+  const step=(W-L-R)/segs.length, bw=step*0.6;
+  segs.forEach((g,i)=>{
+    const cx = L+step*i+step/2, total = g.d.kind==='total', up = g.d.val >= 0;
+    if (total){
+      const r = el('rect',{x:cx-bw/2, y:Y(g.to), width:bw, height:B-Y(g.to), rx:2,
+        fill:'var(--ink-2)', class:'mark'});
+      bindTip(r, g.d.label + '\n' + g.d.val.toFixed(2) + '%'); s.appendChild(r);
+      txt(s, cx, Y(g.to)-8, 'vl em', 'middle', g.d.val.toFixed(1)+'%');
+    } else {
+      const top = Math.min(Y(g.from), Y(g.to));
+      const r = el('rect',{x:cx-bw/2, y:top, width:bw,
+        height: Math.max(Math.abs(Y(g.to)-Y(g.from)),1.5), rx:2,
+        fill: up ? 'var(--accent)' : 'var(--accent-2)', class:'mark'});
+      bindTip(r, g.d.label + '\n' + (up?'+':'') + Math.round(g.d.val) + ' bps');
+      s.appendChild(r);
+      txt(s, cx, top-6, 'vl em', 'middle', (up?'+':'') + Math.round(g.d.val));
+    }
+    if (i < segs.length-1)
+      s.appendChild(el('line',{x1:cx+bw/2, x2:cx+step-bw/2, y1:Y(g.to), y2:Y(g.to),
+        stroke:'var(--ink-3)','stroke-width':1,'stroke-dasharray':'2 2'}));
+    g.d.label.replace(' gross margin','').split(' ')
+      .forEach((w,wi)=> txt(s, cx, B+16+wi*11, 'ax', 'middle', w));
+  });
+}
+rateBridge('c9', D.mbridge);
+
+/* ================= 3. revenue concentration ================= */
+(function(){
+  const C = D.conc, years = ['FY25','FY26'];
+  const W=500, H=250, L=52, R=16, T0=22, B=H-40;
+  const s = svg('c3', W, H);
+  const max = Math.max(...years.map(y=>C[y].top + C[y].rest))*1.06;
+  const Y = v => B - (v/max)*(B-T0);
+  for (let v=0; v<=max; v+=5e6){
+    s.appendChild(el('line',{x1:L,x2:W-R,y1:Y(v),y2:Y(v),class:'gl'}));
+    txt(s, L-7, Y(v)+3.5, 'vl', 'end', '$'+(v/1e6).toFixed(0)+'M');
+  }
+  const step=(W-L-R)/years.length, bw=step*0.38;
+  years.forEach((y,i)=>{
+    const c = C[y], cx = L+step*i+step/2;
+    let acc = 0;
+    [['top','var(--accent)','Top 10 accounts'],['rest','var(--accent-2)','All others']]
+      .forEach(([k,fill,nm])=>{
+        const h = (c[k]/max)*(B-T0);
+        const r = el('rect',{x:cx-bw/2, y:B-acc-h, width:bw, height:Math.max(h-1.5,1), rx:2,
+          fill:fill, class:'mark'});
+        bindTip(r, y+' · '+nm+'\n'+money(c[k])+'   '+c[k+'_pct']+'% of revenue\n'+
+                   'Gross margin '+pct(c[k+'_gm'])+
+                   (k==='rest' ? '\n'+c.n_rest+' accounts' : '\n10 accounts'));
+        s.appendChild(r);
+        txt(s, cx, B-acc-h/2+3.5, 'vl em', 'middle', c[k+'_pct']+'%')
+          .setAttribute('fill', '#fff');
+        acc += h;
+      });
+    txt(s, cx, B+16, 'ax', 'middle', y);
+    txt(s, cx, B+29, 'vl', 'middle', money(c.top+c.rest));
+  });
+  txt(s, L, T0-8, 'ax', 'start', 'REVENUE BY ACCOUNT GROUP').setAttribute('font-weight','600');
+})();
+
+/* ================= 3b. revenue by region =====================================
+   Bar is FY26 revenue, the rule across it is FY25, so growth reads as the gap.
+   Margin sits in the sub-line rather than on a second axis: five regions inside
+   a 470 bps spread would be a chart about nothing. */
+(function(){
+  const G = D.regions, rows = G.rows, n = rows.length;
+  const rowH = 48, T0 = 22, L = 82, R = 66, W = 520, H = T0 + n*rowH + 16;
+  const s = svg('c10', W, H);
+  const max = Math.max(...rows.map(r => Math.max(r.rev, r.rev25))) * 1.04;
+  const X = v => (v/max)*(W-L-R);
+  txt(s, L, T0-12, 'ax', 'start', 'FY26 REVENUE').setAttribute('font-weight','600');
+
+  rows.forEach((r,i)=>{
+    const y = T0 + i*rowH, bh = 19, w = X(r.rev), w25 = X(r.rev25);
+    txt(s, L-10, y+bh*0.72, 'ax', 'end', r.name).setAttribute('fill','var(--ink-2)');
+    const bar = el('rect',{x:L, y:y, width:Math.max(w,2), height:bh, rx:2,
+      fill:'var(--accent)', class:'mark'});
+    bindTip(bar, r.name + '\n' + money(r.rev) + '   ' + r.share.toFixed(1) + '% of revenue' +
+                 '\nFY25 ' + money(r.rev25) + '   ' + (r.growth>0?'+':'') + r.growth + '%' +
+                 '\nGross margin ' + pct(r.gm) + ' against ' + pct(r.gm25) + ' FY25' +
+                 '\n' + r.n + ' accounts');
+    s.appendChild(bar);
+    s.appendChild(el('line',{x1:L+w25, x2:L+w25, y1:y-3, y2:y+bh+3,
+      stroke:'var(--ink)','stroke-width':2,'stroke-linecap':'round'}));
+    txt(s, L+w+8, y+bh*0.72, 'vl em', 'start', money(r.rev));
+    txt(s, L, y+bh+15, 'ax', 'start',
+        r.share.toFixed(1) + '% of revenue  ·  ' + (r.growth>0?'+':'') + r.growth.toFixed(1) +
+        '% YoY  ·  ' +
+        pct(r.gm) + ' gross margin');
+  });
+})();
+
+/* ================= 4 + 5. grouped two-year margin bars ================= */
+function grouped(host, rows){
+  const W=520, H=290, L=48, R=12, T0=16, B=H-46;
+  const s = svg(host, W, H);
+  const names = [...new Set(rows.map(d=>d.name))];
+  const hi = Math.ceil(Math.max(...rows.map(d=>d.gm))/10)*10;
+  const Y = v => B - (v/hi)*(B-T0);
+  for (let v=0; v<=hi; v+=10){
+    s.appendChild(el('line',{x1:L,x2:W-R,y1:Y(v),y2:Y(v),class:'gl'}));
+    txt(s, L-7, Y(v)+3.5, 'vl', 'end', v+'%');
+  }
+  const step=(W-L-R)/names.length, bw=step*0.25;
+  names.forEach((nm,i)=>{
+    const cx = L+step*i+step/2;
+    [2025,2026].forEach((yr,j)=>{
+      const d = rows.find(x=>x.name===nm && x.year===yr); if(!d) return;
+      const bx = cx + (j?1.2:-1.2)*bw/2 + (j?1:-1);
+      const r = el('rect',{x:bx-bw/2, y:Y(d.gm), width:bw, height:B-Y(d.gm), rx:2,
+        fill: j?'var(--accent-2)':'var(--accent)', class:'mark'});
+      bindTip(r, nm + '\nFY' + String(yr).slice(2) + ': ' + pct(d.gm) + ' gross margin');
+      s.appendChild(r);
+      txt(s, bx, Y(d.gm)-6, 'vl', 'middle', pct(d.gm));
+    });
+    nm.split(' ').forEach((w,wi)=> txt(s, cx, B+15+wi*11, 'ax', 'middle', w));
+  });
+}
+grouped('c4', D.lineYear);
+
+/* ================= 5. DIO / DSO / DPO, each against a flat FY26 plan ========= */
+function daysChart(host, key, plan, label){
+  const rows = D.wc, n = rows.length;
+  const W=330, H=210, L=38, R=12, T0=18, B=H-28;
+  const s = svg(host, W, H);
+  const vals = rows.map(d=>d[key]).concat([plan]);
+  const lo = Math.floor(Math.min(...vals)/5)*5 - 5, hi = Math.ceil(Math.max(...vals)/5)*5 + 5;
+  const X = i => L + ((W-L-R)/(n-1))*i, Y = v => B - ((v-lo)/(hi-lo))*(B-T0);
+  for (let v=lo; v<=hi; v+=Math.max(5, Math.round((hi-lo)/4/5)*5)){
+    s.appendChild(el('line',{x1:L,x2:W-R,y1:Y(v),y2:Y(v),class:'gl'}));
+    txt(s, L-6, Y(v)+3.5, 'vl', 'end', v);
+  }
+  // plan applies to FY26 only
+  const i26 = rows.findIndex(d => d.m.startsWith('2026'));
+  if (i26 > -1){
+    s.appendChild(el('line',{x1:X(i26), x2:X(n-1), y1:Y(plan), y2:Y(plan),
+      stroke:'var(--ink-3)','stroke-width':1.6,'stroke-dasharray':'5 3'}));
+    txt(s, X(i26)+4, Y(plan)+13, 'vl', 'start', 'plan ' + plan);
+  }
+  s.appendChild(el('path',{d:'M'+rows.map((d,i)=>X(i)+','+Y(d[key])).join('L'),
+    fill:'none', stroke:'var(--accent-2)','stroke-width':2.2,
+    'stroke-linejoin':'round','stroke-linecap':'round'}));
+  // a marker on every month: 22 points across 280px leaves ~13px of pitch, so the
+  // dot and its halo shrink to stay separate rather than reading as a thick line
+  rows.forEach((d,i)=>{
+    const c = el('circle',{cx:X(i),cy:Y(d[key]),r:2.7,fill:'var(--accent-2)',
+      stroke:'var(--panel)','stroke-width':1.5,class:'mark'});
+    bindTip(c, mlab(d.m)+'\n'+label+' '+d[key]+' days'+
+               (d.m.startsWith('2026') ? '\nPlan '+plan+' days' : ''));
+    s.appendChild(c);
+    if(i%6===0) txt(s, X(i), B+14, 'ax', 'middle', mlab(d.m));
+  });
+  txt(s, X(0)+2, Y(rows[0][key])-9, 'vl em', 'start', rows[0][key]);
+  txt(s, X(n-1), Y(rows[n-1][key])-9, 'vl em', 'end', rows[n-1][key]);
+}
+daysChart('cDIO', 'dio', D.wcPlan.dio, 'Inventory');
+daysChart('cDSO', 'dso', D.wcPlan.dso, 'Receivables');
+daysChart('cDPO', 'dpo', D.wcPlan.dpo, 'Payables');
+
+/* ================= 6. overtime, period switchable ================= */
+function draw6(key){
+  const full = D.payroll;
+  const rows = key==='T3M' ? full.slice(-3) : key==='T6M' ? full.slice(-6) : full;
+  document.getElementById('n2').textContent =
+    key==='FY' ? 'Monthly, with T3M and T6M trailing averages overlaid. FY26 ' + pct(T.ot26) + ' against ' + pct(T.ot25) + ' FY25.'
+    : key==='T6M' ? 'Trailing six months. Average ' + pct(T.t6_ot) + '.'
+    : 'Trailing three months. Average ' + pct(T.t3_ot) + '.';
+
+  const W=520, H=250, L=46, R=14, T0=18, B=H-30;
+  const s = svg('c6', W, H), n = rows.length;
+  const hi = Math.ceil(Math.max(...rows.map(d=>d.otpct))/2)*2;
+  const X = i => n===1 ? (L+W-R)/2 : L + ((W-L-R)/(n-1))*i, Y = v => B - (v/hi)*(B-T0);
+  for(let v=0; v<=hi; v+=4){
+    s.appendChild(el('line',{x1:L,x2:W-R,y1:Y(v),y2:Y(v),class:'gl'}));
+    txt(s, L-7, Y(v)+3.5, 'vl', 'end', v+'%');
+  }
+  const pts = rows.map((d,i)=>X(i)+','+Y(d.otpct)).join('L');
+  s.appendChild(el('path',{d:'M'+pts+'L'+X(n-1)+','+B+'L'+X(0)+','+B+'Z',
+    fill:'var(--accent-2)','fill-opacity':.12}));
+  s.appendChild(el('path',{d:'M'+pts, fill:'none', stroke:'var(--accent-2)',
+    'stroke-width':2.2,'stroke-linejoin':'round','stroke-linecap':'round'}));
+
+  if (key==='FY'){
+    [['t6','4 3'],['t3','1 3']].forEach(([f,dash])=>{
+      const seg = rows.map((d,i)=>d[f]==null?null:X(i)+','+Y(d[f])).filter(Boolean);
+      if (seg.length>1) s.appendChild(el('path',{d:'M'+seg.join('L'), fill:'none',
+        stroke:'var(--accent)','stroke-width':1.6,'stroke-dasharray':dash}));
+    });
+  }
+  // a real legend rather than a line of text inside the plot; the two trailing averages
+  // differ only by dash pattern, so the key has to draw strokes, not colour chips
+  const stroke = (color, w, dash) =>
+    '<svg width="20" height="8" aria-hidden="true"><line x1="0" y1="4" x2="20" y2="4" ' +
+    'stroke="' + color + '" stroke-width="' + w + '"' +
+    (dash ? ' stroke-dasharray="' + dash + '"' : '') + '/></svg>';
+  document.getElementById('lg6').innerHTML =
+    ['<span>' + stroke('var(--accent-2)', 2.2) + 'Monthly</span>']
+    .concat(key==='FY' ? [
+      '<span>' + stroke('var(--accent)', 1.6, '4 3') + 'T6M average</span>',
+      '<span>' + stroke('var(--accent)', 1.6, '1 3') + 'T3M average</span>'] : [])
+    .join('');
+  rows.forEach((d,i)=>{
+    const c = el('circle',{cx:X(i),cy:Y(d.otpct),r: n>12?3.1:3.8, fill:'var(--accent-2)',
+      stroke:'var(--panel)','stroke-width': n>12?1.6:2, class:'mark'});
+    bindTip(c, mlab(d.m)+'\n'+pct(d.otpct)+' of hours on overtime\n'+k(d.prem)+' overtime expense');
+    s.appendChild(c);
+    if(i===0) txt(s, X(i), Y(d.otpct)-11, 'vl em', 'start', pct(d.otpct));
+    if(i===n-1) txt(s, X(i), Y(d.otpct)-11, 'vl em', 'end', pct(d.otpct));
+    if(n<=6 || i%6===0) txt(s, X(i), B+15, 'ax', 'middle', mlab(d.m));
+  });
+}
+segmented('seg2', [{key:'FY',label:'FY25-26'},{key:'T6M',label:'T6M'},{key:'T3M',label:'T3M'}], draw6, 'FY');
+
+/* ================= 7. overtime expense by department ================= */
+(function(){
+  const W=520, rowH=46, T0=10, L=104, R=62, H=T0+D.depts.length*rowH+8;
+  const s = svg('c7', W, H);
+  const max = Math.max(...D.depts.map(d=>d.prem));
+  D.depts.forEach((d,i)=>{
+    const y=T0+i*rowH, bh=19, w=(d.prem/max)*(W-L-R);
+    txt(s, L-10, y+bh*0.72, 'ax', 'end', d.name).setAttribute('fill','var(--ink-2)');
+    const r = el('rect',{x:L,y:y,width:Math.max(w,2),height:bh,rx:2,
+      fill:'var(--accent)',class:'mark'});
+    bindTip(r, d.name+'\n'+k(d.prem)+' overtime expense\n'+pct(d.otpct)+' of hours');
+    s.appendChild(r);
+    txt(s, L+w+8, y+bh*0.72, 'vl em', 'start', k(d.prem));
+    txt(s, L, y+bh+14, 'ax', 'start', pct(d.otpct) + ' of direct hours');
+  });
+})();
+
+/* ================= 8. backlog stacked by product line ================= */
+(function(){
+  const lines = D.blLines, rows = D.backlogLine;
+  const SH = ['var(--s1)','var(--s2)','var(--s3)','var(--s4)'];
+  document.getElementById('lg8').innerHTML = lines.map((c,i)=>
+    '<span><i class="swatch" style="background:'+SH[i]+'"></i>'+c+'</span>').join('');
+
+  const W=1060, H=300, L=52, R=14, T0=16, B=H-30;
+  const s = svg('c8', W, H), n = rows.length;
+  const maxB = Math.max(...rows.map(d=>d.total))*1.08;
+  const step=(W-L-R)/n, bw=step*0.76, x=i=>L+step*i+step/2;
+  const Y = v => B - (v/maxB)*(B-T0);
+  for (let v=0; v<=maxB; v+=2e6){
+    s.appendChild(el('line',{x1:L,x2:W-R,y1:Y(v),y2:Y(v),class:'gl'}));
+    txt(s, L-7, Y(v)+3.5, 'vl', 'end', '$'+(v/1e6).toFixed(0)+'M');
+  }
+  rows.forEach((d,i)=>{
+    let acc = 0;
+    lines.forEach((c,j)=>{
+      const h = (d[c]/maxB)*(B-T0);
+      const r = el('rect',{x:x(i)-bw/2, y:B-acc-h, width:bw, height:Math.max(h-1.5,0.5),
+        fill:SH[j], class:'mark'});
+      bindTip(r, mlab(d.m)+'\n'+c+': '+money(d[c])+'\nTotal backlog '+money(d.total)+
+                 '\n'+d.age+' day average order age');
+      s.appendChild(r); acc += h;
+    });
+    if(i%3===0||i===n-1) txt(s, x(i), B+15, 'ax', 'middle', mlab(d.m));
+  });
+  txt(s, x(0), Y(rows[0].total)-9, 'vl em', 'start', money(rows[0].total));
+  txt(s, x(n-1), Y(rows[n-1].total)-9, 'vl em', 'end', money(rows[n-1].total));
+})();
+
+
+/* ================= P&L summary ================= */
+(function(){
+  const R = D.pnl, rev26 = R[0].v, rev25 = R[0].y25, revP = R[0].p;
+  const at = l => R.find(r => r.label === l);
+  const th = v => Math.round(v/1000);
+  const num = (v, dollar) => {
+    const a = Math.abs(th(v)).toLocaleString();
+    const s = th(v) < 0 ? '(' + a + ')' : a;
+    return (dollar ? '<i>$</i>' : '') + s;
+  };
+  const p1 = v => v.toFixed(1) + '%';
+  const p2 = v => v<0 ? '(' + Math.abs(v).toFixed(2) + '%)' : v.toFixed(2) + '%';
+  const C = (cls, html) => '<div class="' + cls + '">' + html + '</div>';
+
+  function line(label, key, o){
+    o = o || {};
+    const r = at(key), k = 'c' + (o.sub ? ' sub' : '');
+    return C('lb' + (o.sub ? ' sub' : ''), label) +
+           C(k, num(r.v, o.$)) + C(k, num(r.p, o.$)) + C(k, num(r.v - r.p, false)) +
+           C('gap' + (o.sub ? ' sub' : ''), '') +
+           C(k, num(r.y25, o.$)) + C(k, num(r.v - r.y25, false));
+  }
+  function marginRow(key){
+    const r = at(key);
+    const a = r.v/rev26*100, b = r.p/revP*100, c = r.y25/rev25*100;
+    return C('lb pc','') + C('c pc', p1(a)) + C('c pc', p1(b)) + C('c pc', p2(a-b)) +
+           C('gap','') + C('c pc', p1(c)) + C('c pc', p2(a-c));
+  }
+  const spacer = C('sp','').repeat(7);
+
+  document.getElementById('cPNL').innerHTML =
+    '<div class="tw"><div class="cap">$ in thousands</div><div class="model">' +
+      C('lb hd','') + C('c hd', 'FY26') + C('c hd', 'Plan') + C('c hd', 'vs Plan') +
+      C('gap','') + C('c hd', 'FY25') + C('c hd', 'vs FY25') +
+      line('Revenue', 'Revenue', {$:true}) +
+      line('COGS', 'COGS') +
+      line('Gross Profit', 'Gross profit', {sub:true}) +
+      marginRow('Gross profit') + spacer +
+      line('SG&amp;A', 'SG&A') +
+      line('R&amp;D', 'R&D') +
+      line('EBITDA', 'EBITDA', {sub:true}) +
+      marginRow('EBITDA') + spacer +
+      line('Deprec. &amp; Amort.', 'D&A') +
+      line('Interest', 'Interest') +
+      line('Taxes', 'Taxes') +
+      line('Net Income', 'Net income', {sub:true}) +
+      marginRow('Net income') +
+    '</div></div>';
+})();
+
+
+/* ================= covenant + long-range plan tables ================= */
+(function(){
+  const F = D.fin;
+  document.getElementById('cov').innerHTML =
+    '<thead><tr><th>Covenant</th><th>Test</th><th class="n">Actual</th>' +
+    '<th class="n">Headroom</th><th>Status</th></tr></thead><tbody>' +
+    F.covenants.map(c =>
+      '<tr><td><b>'+c.name+'</b></td><td>'+c.test+'</td><td class="n">'+c.actual+'</td>' +
+      '<td class="n">'+c.head+'</td>' +
+      '<td><span class="pill '+c.state+'">'+(c.state==='pass'?'In compliance':'Monitor')+'</span></td></tr>'
+    ).join('') + '</tbody>';
+
+  const yoy = v => v == null
+    ? '<td class="n muted">&ndash;</td>'
+    : '<td class="n days' + (v < 0 ? ' dn' : '') + '">' +
+      (v < 0 ? '(' + Math.abs(v).toFixed(1) + '%)' : '+' + v.toFixed(1) + '%') + '</td>';
+  document.getElementById('lrp').innerHTML =
+    '<thead><tr><th>Year</th><th class="n">Revenue</th><th class="n">YoY</th>' +
+    '<th class="n">GM</th><th class="n">EBITDA</th><th class="n">YoY</th></tr></thead><tbody>' +
+    F.lrp.map(r =>
+      '<tr><td><b>'+r.y+'</b></td><td class="n">$'+r.rev.toFixed(2)+'M</td>' + yoy(r.rv) +
+      '<td class="n">'+r.gm.toFixed(1)+'%</td><td class="n">$'+r.ebitda.toFixed(2)+'M</td>' +
+      yoy(r.ev) + '</tr>'
+    ).join('') + '</tbody>';
+
+  document.getElementById('lrpa').innerHTML =
+    '<thead><tr><th>Driver</th><th>Metric</th><th>Assumption</th></tr></thead><tbody>' +
+    D.lrpAssump.map(a =>
+      '<tr><td><b>'+a.name+'</b></td><td class="mono2">'+a.metric+'</td>' +
+      '<td>'+a.text+'</td></tr>'
+    ).join('') + '</tbody>';
+})();
+
+
+/* ---- scenario links open their section and scroll to it ---- */
+(function(){
+  const smooth = !matchMedia('(prefers-reduced-motion: reduce)').matches;
+  function reveal(id){
+    const d = document.getElementById(id);
+    if (!d) return;
+    d.open = true;
+    requestAnimationFrame(() =>
+      d.scrollIntoView({behavior: smooth ? 'smooth' : 'auto', block: 'start'}));
+  }
+  document.querySelectorAll('a.jump').forEach(a => {
+    a.addEventListener('click', e => {
+      e.preventDefault();
+      const id = a.getAttribute('href').slice(1);
+      history.replaceState(null, '', '#' + id);
+      reveal(id);
+    });
+  });
+  if (location.hash) reveal(location.hash.slice(1));
+})();
+
+</script>
+</body>
+</html>
