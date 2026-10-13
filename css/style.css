@@ -742,12 +742,13 @@ section[id] { scroll-margin-top: 100px; }
   border-top: 1px solid var(--line);
   padding-top: var(--space-4);
 }
-.cs-stat { display: grid; gap: 0.4em; }
+.cs-stat { display: grid; gap: 0.55em; align-content: start; }
 .cs-num {
   font-family: var(--font-display);
-  font-size: clamp(1.6rem, 2.6vw, 2.1rem);
-  line-height: 1.1;
-  letter-spacing: -0.02em;
+  font-size: 1.15rem;
+  font-weight: 500;
+  line-height: 1.3;
+  letter-spacing: -0.01em;
   color: var(--accent);
 }
 .cs-lab { font-size: 0.92rem; color: var(--text-secondary); }
