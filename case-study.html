@@ -1256,13 +1256,20 @@ segmented('seg2', [{key:'FY',label:'FY25-26'},{key:'T6M',label:'T6M'},{key:'T3M'
   const p2 = v => v<0 ? '(' + Math.abs(v).toFixed(2) + '%)' : v.toFixed(2) + '%';
   const C = (cls, html) => '<div class="' + cls + '">' + html + '</div>';
 
+  /* Expense lines below gross profit are presented as positive magnitudes, which is
+     how an operating P&L normally reads. The variances are computed on those same
+     magnitudes so each row still foots left to right, which means a positive variance
+     on an expense row is MORE spend, the opposite of what it means on revenue and the
+     subtotals. That flip is conventional, and the alternative (signing the variance by
+     favourability) breaks the arithmetic on the row. */
   function line(label, key, o){
     o = o || {};
     const r = at(key), k = 'c' + (o.sub ? ' sub' : '');
+    const f = o.pos ? Math.abs : (x => x);
     return C('lb' + (o.sub ? ' sub' : ''), label) +
-           C(k, num(r.v, o.$)) + C(k, num(r.p, o.$)) + C(k, num(r.v - r.p, false)) +
+           C(k, num(f(r.v), o.$)) + C(k, num(f(r.p), o.$)) + C(k, num(f(r.v) - f(r.p), false)) +
            C('gap' + (o.sub ? ' sub' : ''), '') +
-           C(k, num(r.y25, o.$)) + C(k, num(r.v - r.y25, false));
+           C(k, num(f(r.y25), o.$)) + C(k, num(f(r.v) - f(r.y25), false));
   }
   function marginRow(key){
     const r = at(key);
@@ -1280,13 +1287,13 @@ segmented('seg2', [{key:'FY',label:'FY25-26'},{key:'T6M',label:'T6M'},{key:'T3M'
       line('COGS', 'COGS') +
       line('Gross Profit', 'Gross profit', {sub:true}) +
       marginRow('Gross profit') + spacer +
-      line('SG&amp;A', 'SG&A') +
-      line('R&amp;D', 'R&D') +
+      line('SG&amp;A', 'SG&A', {pos:true}) +
+      line('R&amp;D', 'R&D', {pos:true}) +
       line('EBITDA', 'EBITDA', {sub:true}) +
       marginRow('EBITDA') + spacer +
-      line('Deprec. &amp; Amort.', 'D&A') +
-      line('Interest', 'Interest') +
-      line('Taxes', 'Taxes') +
+      line('Deprec. &amp; Amort.', 'D&A', {pos:true}) +
+      line('Interest', 'Interest', {pos:true}) +
+      line('Taxes', 'Taxes', {pos:true}) +
       line('Net Income', 'Net income', {sub:true}) +
       marginRow('Net income') +
     '</div></div>';
