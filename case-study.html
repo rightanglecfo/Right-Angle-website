@@ -43,6 +43,7 @@
   --warn-ink:#8A5312;
   --good:#2F7A52;
   --good-bg:#EDF6F0;
+  --accent-bg:#EDF2FA;
   --s1:#1F4E9C; --s2:#2F8D6A; --s3:#C9761A; --s4:#9C3F74;
   --navyband:#1F3251;
   --font-display:'Space Grotesk',system-ui,-apple-system,'Segoe UI',sans-serif;
@@ -520,7 +521,7 @@
         </div>
       </div>
 
-      <div class="sect"><h3>How the systems connect</h3></div>
+      <div class="sect"><h3>Systems and reporting</h3></div>
       <div class="grid">
         <div class="card chart">
           <h4>Today</h4>
@@ -557,33 +558,41 @@
         </div>
 
         <div class="card chart">
-          <h4>After the interface</h4>
-          <p class="note">Three weeks of IT work. The ERP costing module is already licensed,
-             so this is configuration rather than a purchase.</p>
-          <svg viewBox="0 0 500 298" role="img" aria-label="After: a scheduled interface posts job-level cost from the shop floor job tracker to the ERP general ledger nightly, with no manual step, so the ledger carries work in process and cost of sales by job and variance by cost element as it happens.">
+          <h4>What the reporting runs on</h4>
+          <p class="note">The dashboard does not wait on that gap being closed. Both systems
+             already export; the join and the refresh are built and scheduled as part of the
+             engagement, and the ledger is left exactly as it is.</p>
+          <svg viewBox="0 0 500 298" role="img" aria-label="What the reporting runs on: the shop floor job tracker and the ERP order and sales data both feed a scheduled extract and join built during the engagement, which feeds a reporting layer carrying margin by product line, customer and region, plus working capital, backlog and labor. The general ledger is not changed.">
             <defs><marker id="dgB" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="5" markerHeight="5" orient="auto">
-              <path d="M0,1 L9,5 L0,9 z" fill="var(--good)"/></marker></defs>
+              <path d="M0,1 L9,5 L0,9 z" fill="var(--accent)"/></marker></defs>
 
-            <rect x="30" y="6" width="440" height="70" rx="3" fill="var(--panel)" stroke="var(--hair)"/>
-            <text x="46" y="28" class="dg-t">Shop floor job tracker</text>
-            <text x="46" y="47" class="dg-f">Hours, material issued and units scrapped, by job</text>
-            <text x="46" y="64" class="dg-f">Knows what every job actually cost</text>
+            <rect x="18" y="6" width="222" height="66" rx="3" fill="var(--panel)" stroke="var(--hair)"/>
+            <text x="32" y="27" class="dg-t">Shop floor job tracker</text>
+            <text x="32" y="45" class="dg-f">Hours, material, scrap</text>
+            <text x="32" y="61" class="dg-f">by job</text>
 
-            <line x1="250" y1="76" x2="250" y2="132" stroke="var(--good)" stroke-width="2"/>
-            <text x="268" y="110" class="dg-l" fill="var(--good)">nightly, job level</text>
+            <rect x="260" y="6" width="222" height="66" rx="3" fill="var(--panel)" stroke="var(--hair)"/>
+            <text x="274" y="27" class="dg-t">ERP order and sales data</text>
+            <text x="274" y="45" class="dg-f">Revenue, customer,</text>
+            <text x="274" y="61" class="dg-f">product line, standards</text>
 
-            <rect x="106" y="132" width="288" height="64" rx="3" fill="var(--good-bg)"
-                  stroke="var(--good)"/>
-            <text x="122" y="153" class="dg-f" fill="var(--good)">Scheduled interface</text>
-            <text x="122" y="170" class="dg-f" fill="var(--good)">Posts job cost as it is reported</text>
-            <text x="122" y="187" class="dg-f" fill="var(--good)">No manual step, nothing waits on a person</text>
+            <line x1="129" y1="72" x2="129" y2="110" stroke="var(--accent)" stroke-width="1.6"/>
+            <line x1="371" y1="72" x2="371" y2="110" stroke="var(--accent)" stroke-width="1.6"/>
+            <text x="250" y="95" class="dg-l" fill="var(--accent)" text-anchor="middle">scheduled export</text>
 
-            <line x1="250" y1="196" x2="250" y2="220" stroke="var(--good)" stroke-width="2" marker-end="url(#dgB)"/>
+            <rect x="76" y="110" width="348" height="68" rx="3" fill="var(--accent-bg)"
+                  stroke="var(--accent)" stroke-width="1.4"/>
+            <text x="92" y="131" class="dg-t" fill="var(--accent)">Extract and join</text>
+            <text x="92" y="149" class="dg-f">Built and automated during the engagement</text>
+            <text x="92" y="165" class="dg-f">Runs on a schedule, nothing retyped</text>
 
-            <rect x="30" y="226" width="440" height="70" rx="3" fill="var(--panel)" stroke="var(--hair)"/>
-            <text x="46" y="248" class="dg-t">ERP general ledger</text>
-            <text x="46" y="267" class="dg-f">Work in process and cost of sales carried by job</text>
-            <text x="46" y="284" class="dg-f">Variance by cost element, continuously, with a cause</text>
+            <line x1="250" y1="178" x2="250" y2="208" stroke="var(--accent)" stroke-width="1.6" marker-end="url(#dgB)"/>
+
+            <rect x="48" y="214" width="404" height="80" rx="3" fill="var(--panel)" stroke="var(--hair)"/>
+            <text x="64" y="236" class="dg-t">Reporting layer</text>
+            <text x="64" y="254" class="dg-f">Margin by product line, customer and region</text>
+            <text x="64" y="270" class="dg-f">Working capital, backlog, labor</text>
+            <text x="64" y="287" class="dg-f" fill="var(--ink-3)">The general ledger is not touched</text>
           </svg>
         </div>
       </div>
