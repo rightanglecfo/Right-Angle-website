@@ -193,6 +193,9 @@
 .cs-scope .days{font-family:var(--font-mono);color:var(--s2);font-weight:600}
 .cs-scope .days.dn{color:var(--accent-2)}
 .cs-scope .mono2{font-family:var(--font-mono);font-size:11.5px;color:var(--ink-2);white-space:nowrap}
+.cs-scope .dg-t{font-family:var(--font-display);font-size:12.5px;font-weight:600;fill:var(--ink)}
+.cs-scope .dg-f{font-family:var(--font-body);font-size:11px;fill:var(--ink-2)}
+.cs-scope .dg-l{font-family:var(--font-mono);font-size:10.5px;font-weight:600;letter-spacing:.03em}
 .cs-scope .muted{color:var(--ink-3)}
 .cs-scope .cols{display:grid;grid-template-columns:1fr 1fr;gap:16px}
 .cs-scope .block{border:1px solid var(--hair);border-radius:4px;padding:18px 20px;background:var(--surface)}
@@ -514,6 +517,74 @@
             <li><b>No account reconciliation schedule.</b> Balance sheet accounts are reviewed when
                 something looks wrong.</li>
           </ul>
+        </div>
+      </div>
+
+      <div class="sect"><h3>How the systems connect</h3></div>
+      <div class="grid">
+        <div class="card chart">
+          <h4>Today</h4>
+          <p class="note">The job tracker already knows what every job cost. Nothing carries
+             that to the ledger except a person retyping a report once a month.</p>
+          <svg viewBox="0 0 500 298" role="img" aria-label="Today: the shop floor job tracker does not connect to the ERP general ledger. The gap is bridged by a printed production report keyed in by hand at close as one summary journal entry, and the ledger ends up with cost of sales at standard plus one plug for the $2.13M difference.">
+            <defs><marker id="dgA" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="5" markerHeight="5" orient="auto">
+              <path d="M0,1 L9,5 L0,9 z" fill="var(--ink-3)"/></marker></defs>
+
+            <rect x="30" y="6" width="440" height="70" rx="3" fill="var(--panel)" stroke="var(--hair)"/>
+            <text x="46" y="28" class="dg-t">Shop floor job tracker</text>
+            <text x="46" y="47" class="dg-f">Hours, material issued and units scrapped, by job</text>
+            <text x="46" y="64" class="dg-f">Knows what every job actually cost</text>
+
+            <line x1="250" y1="76" x2="250" y2="98" stroke="var(--ink-3)" stroke-width="1.2"/>
+            <line x1="236" y1="110" x2="264" y2="100" stroke="var(--accent-2)" stroke-width="2"/>
+            <line x1="236" y1="118" x2="264" y2="108" stroke="var(--accent-2)" stroke-width="2"/>
+            <line x1="250" y1="120" x2="250" y2="132" stroke="var(--ink-3)" stroke-width="1.2"/>
+            <text x="276" y="113" class="dg-l" fill="var(--accent-2)">no interface</text>
+
+            <rect x="106" y="132" width="288" height="64" rx="3" fill="var(--warn-bg)"
+                  stroke="var(--accent-2)" stroke-dasharray="4 3"/>
+            <text x="122" y="153" class="dg-f" fill="var(--warn-ink)">Printed production report</text>
+            <text x="122" y="170" class="dg-f" fill="var(--warn-ink)">Keyed in by hand at close</text>
+            <text x="122" y="187" class="dg-f" fill="var(--warn-ink)">One summary journal entry, monthly</text>
+
+            <line x1="250" y1="196" x2="250" y2="220" stroke="var(--ink-3)" stroke-width="1.2" marker-end="url(#dgA)"/>
+
+            <rect x="30" y="226" width="440" height="70" rx="3" fill="var(--panel)" stroke="var(--hair)"/>
+            <text x="46" y="248" class="dg-t">ERP general ledger</text>
+            <text x="46" y="267" class="dg-f">Cost of sales relieved at standard on shipment</text>
+            <text x="46" y="284" class="dg-f">One plug for the $2.13M difference, no detail behind it</text>
+          </svg>
+        </div>
+
+        <div class="card chart">
+          <h4>After the interface</h4>
+          <p class="note">Three weeks of IT work. The ERP costing module is already licensed,
+             so this is configuration rather than a purchase.</p>
+          <svg viewBox="0 0 500 298" role="img" aria-label="After: a scheduled interface posts job-level cost from the shop floor job tracker to the ERP general ledger nightly, with no manual step, so the ledger carries work in process and cost of sales by job and variance by cost element as it happens.">
+            <defs><marker id="dgB" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="5" markerHeight="5" orient="auto">
+              <path d="M0,1 L9,5 L0,9 z" fill="var(--good)"/></marker></defs>
+
+            <rect x="30" y="6" width="440" height="70" rx="3" fill="var(--panel)" stroke="var(--hair)"/>
+            <text x="46" y="28" class="dg-t">Shop floor job tracker</text>
+            <text x="46" y="47" class="dg-f">Hours, material issued and units scrapped, by job</text>
+            <text x="46" y="64" class="dg-f">Knows what every job actually cost</text>
+
+            <line x1="250" y1="76" x2="250" y2="132" stroke="var(--good)" stroke-width="2"/>
+            <text x="268" y="110" class="dg-l" fill="var(--good)">nightly, job level</text>
+
+            <rect x="106" y="132" width="288" height="64" rx="3" fill="var(--good-bg)"
+                  stroke="var(--good)"/>
+            <text x="122" y="153" class="dg-f" fill="var(--good)">Scheduled interface</text>
+            <text x="122" y="170" class="dg-f" fill="var(--good)">Posts job cost as it is reported</text>
+            <text x="122" y="187" class="dg-f" fill="var(--good)">No manual step, nothing waits on a person</text>
+
+            <line x1="250" y1="196" x2="250" y2="220" stroke="var(--good)" stroke-width="2" marker-end="url(#dgB)"/>
+
+            <rect x="30" y="226" width="440" height="70" rx="3" fill="var(--panel)" stroke="var(--hair)"/>
+            <text x="46" y="248" class="dg-t">ERP general ledger</text>
+            <text x="46" y="267" class="dg-f">Work in process and cost of sales carried by job</text>
+            <text x="46" y="284" class="dg-f">Variance by cost element, continuously, with a cause</text>
+          </svg>
         </div>
       </div>
 
