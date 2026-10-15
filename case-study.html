@@ -1355,7 +1355,7 @@ segmented('seg3', [{key:'FY',label:'FY26'},{key:'T6M',label:'T6M'},{key:'T3M',la
   const p2 = v => v<0 ? '(' + Math.abs(v).toFixed(2) + '%)' : v.toFixed(2) + '%';
   const C = (cls, html) => '<div class="' + cls + '">' + html + '</div>';
 
-  /* Expense lines below gross profit are presented as positive magnitudes, which is
+  /* COGS and the expense lines below gross profit are presented as positive magnitudes, which is
      how an operating P&L normally reads. The variances are computed on those same
      magnitudes so each row still foots left to right, which means a positive variance
      on an expense row is MORE spend, the opposite of what it means on revenue and the
@@ -1383,7 +1383,7 @@ segmented('seg3', [{key:'FY',label:'FY26'},{key:'T6M',label:'T6M'},{key:'T3M',la
       C('lb hd','') + C('c hd', 'FY26') + C('c hd', 'Plan') + C('c hd', 'vs Plan') +
       C('gap','') + C('c hd', 'FY25') + C('c hd', 'vs FY25') +
       line('Revenue', 'Revenue', {$:true}) +
-      line('COGS', 'COGS') +
+      line('COGS', 'COGS', {pos:true}) +
       line('Gross Profit', 'Gross profit', {sub:true}) +
       marginRow('Gross profit') + spacer +
       line('SG&amp;A', 'SG&A', {pos:true}) +
