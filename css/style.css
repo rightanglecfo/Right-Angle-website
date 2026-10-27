@@ -17,8 +17,8 @@
   --text-secondary: #C3CADC;   /* body copy on dark — lightened/warmed for long-form legibility */
   --text-tertiary: #8E97AC;    /* decorative / large-text only, <4.5:1 at small sizes */
 
-  --accent: #C6A667;      /* muted brass/gold — the one deliberate pop of color */
-  --accent-soft: rgba(198, 166, 103, 0.16);
+  --accent: #A9B4CC;      /* light steel grey, replaces the former brass/gold accent */
+  --accent-soft: rgba(169, 180, 204, 0.16);
 
   --line: rgba(247, 247, 245, 0.10);
   --line-strong: rgba(247, 247, 245, 0.22);
@@ -320,7 +320,7 @@ section[id] { scroll-margin-top: 100px; }
 .hero-watermark .bar:nth-child(1) { height: 30%; animation-delay: 120ms; }
 .hero-watermark .bar:nth-child(2) { height: 50%; animation-delay: 260ms; }
 .hero-watermark .bar:nth-child(3) { height: 72%; animation-delay: 400ms; }
-.hero-watermark .bar:nth-child(4) { height: 100%; background: linear-gradient(180deg, rgba(198,166,103,0.55), rgba(198,166,103,0.12)); animation-delay: 540ms; }
+.hero-watermark .bar:nth-child(4) { height: 100%; background: linear-gradient(180deg, rgba(169,180,204,0.55), rgba(169,180,204,0.12)); animation-delay: 540ms; }
 @keyframes growBar { to { transform: scaleY(1); } }
 @media (prefers-reduced-motion: reduce) {
   .hero-watermark .bar { animation: none; transform: scaleY(1); }
